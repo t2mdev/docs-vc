@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en-US">
     <head>
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
-        <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=">
         <title>T2M Training</title>
     </head>
 
@@ -19,7 +19,38 @@
         <!-- MAIN CONTENT -->
         <div id="main_content_wrap" class="outer">
             <section id="main_content" class="inner">
-                {{ content }}
+                <section class="jumbotron geopattern" data-pattern-id="Blah Blah">
+    <div class="container">
+        <div id="jumbotron-meta-info">
+            <h1>Blah Blah</h1>
+            <span class="meta-info">
+                
+                    Nothing here
+                
+                
+            </span>
+        </div>
+    </div>
+</section>
+<script>
+    $(document).ready(function(){
+
+        $('.geopattern').each(function(){
+            $(this).geopattern($(this).data('pattern-id'));
+        });
+
+    });
+</script>
+<article class="post container">
+
+    <h2 id="header2">Header2</h2>
+<h3 id="header-3">Header 3</h3>
+
+<p>This is markup!  Yeah!!!</p>
+
+
+</article>
+
             </section>
         </div>
 
@@ -30,15 +61,6 @@
             </footer>
         </div>
 
-        {% if site.google_analytics %}
-            <script>
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-                ga('create', '{{ site.google_analytics }}', 'auto');
-                ga('send', 'pageview');
-            </script>
-        {% endif %}
+        
     </body>
 </html>
