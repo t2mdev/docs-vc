@@ -1,0 +1,25 @@
+---
+layout: page
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,maximum-scale=2">
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/documents.css?v=' | append: site.github.build_revision | relative_url }}">
+        <title>T2M Training</title>
+    </head>
+
+    {% for docs in site.docs %}
+
+    <h1>{{ docs.title}}</h1>
+
+    <div id="main_content_wrap" class="outer">
+            <section id="main_content" class="inner">
+                {{ docs.content }}
+            </section>
+    </div>
+
+    {% endfor %}
+</html>
