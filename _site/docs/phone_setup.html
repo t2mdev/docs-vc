@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,maximum-scale=2">
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v=">
+        <title>T2M Training</title>
+    </head>
+    
+        <body>
+            <!-- HEADER -->
+              <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <a class="navbar-brand" href="#">CloudWorks</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+              <li id="skype" class="nav-item">
+                  <a class="nav-link" href="/views/skype.html">Skype</a>
+              </li>
+              <li id="reports" class="nav-item">
+                  <a class="nav-link" href="/views/reports.html">Reports</a>
+              </li>
+              <li id="settings" class="nav-item">
+                  <a class="nav-link" href="/views/settings.html">Settings</a>
+              </li>
+              <li id="support" class="nav-item">
+                  <a class="nav-link" href="/views/support.html">Support</a>
+              </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+              <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+          </form>
+      </div>
+  </nav>
+
+
+            <div id="header_wrap" class="outer">
+                <header class="inner">
+                    <h1 id="project_title">T2M Cloud Training</h1>
+                </header>
+            </div>
+    
+            <!--SIDE BAR NAVIGATION-->
+            
+            <div class="sidenav">
+    <ul>
+        
+        <li>
+            <a href="/docs/phone_setup.html"  style="font-weight: bold;"><p>VVX Phone Setup</p>
+</a>
+        </li>
+        
+        <li>
+            <a href="/docs/windows_dhcp_settings.html" ><p>Windows DHCP Configuration Steps</p>
+</a>
+        </li>
+        
+    </ul>
+    
+  </div>
+    
+            <!-- MAIN CONTENT -->
+            <div id="main_content_wrap" class="outer">
+                <section id="main_content" class="inner">
+                    
+
+                    <h1>VVX Phone Setup</h1>
+                
+                    <div id="main_content_wrap" class="outer">
+                            <section id="main_content" class="inner">
+                                <p>The purpose of this guide is to walk you through the successful installation of a VVX Phone for use with Skype for Business in conjunction with Time2Market Cloud Services. Please note that the screenshots used throughout this guide may not match your phone exactly, as there are minor differences between VVX models. However, the fundamental menus involved are similar across all devices. </p>
+
+<h2>Connecting the Phone</h2>
+<p>The first step, of course, is connecting all the necessary cables. Luckily, there aren’t very many. You will need to: </p>
+<ol>
+  <li>Power the phone. This can be done either through a direct power adapter plugged into an AC outlet or through a Power over Ethernet (PoE) adapter.</li>
+  <li>Connect the phone to your network via Ethernet cable. This is typically done by disconnecting the Ethernet cable from your computer and plugging it into the phone’s LAN port. There are multiple Ethernet ports on the phone – make sure that this cable is plugged into the LAN port and not the Computer port.</li>
+  <li>Using a second Ethernet cable, connect the phone to the computer by plugging one end into the phone’s PC port and the other into the Ethernet port on your computer. This step is technically not required, but it will insure the best connectivity for configuration (and is necessary for BToE sign-in functionality).</li>
+</ol>
+
+<h2>Enable Web Server</h2>
+<p>In order to access the web-based confiuration menu, it is necessary that the Web Server option is enabled on the phone.</p>
+<ol>
+  <li>Press the Home key and then browse to the follwing menu: Settings&gt;Advanced&gt;(Enter default Admind code 456 on the keypad)&gt;Administration Settings&gt;Web Server Configuration</li>
+  <li>Select Web Server and choose the Enabled option.</li>
+  <li>Select Web Config Mode and choose HTTP/HTTPS (barring a specific reason your organization has to choose another option)</li>
+  <li>Select Back and then Save Config to save the changes. The phone will now restart.</li>
+</ol>
+
+<h2>Verify &amp; Update Software Version</h2>
+<p>Once the phone has restarted, you will next connect to the phone’s web server in order to verify and possibly update the software version.</p>
+<ol>
+  <li>On the phone go to Settings &gt; Status &gt; Network &gt; TCP/IP Parameters and note the IP Address assigned to the phone.  If the phone does not have an IP Address, you need to troubleshoot why that is the case. A good place to start would be to double-check the physical connections to and from the phone.</li>
+  <li>Open a browser and connect to the IP Address.</li>
+  <li>Login to the phone with the default admin credentials of ‘456’</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>On the resulting page, go to Utilities</td>
+          <td>Software Upgrade</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>Ensure that the version of software assigned to the phone is 5.2.x or later.  If the current software version is anything but this, click the “Check for Updates” button (leave Polycom Hosted Server selected).</li>
+  <li>The drop-down menu will now display a list of software versions you can install. Select the latest version and choose Install.  Your phone will reboot several times during this process, which can take up to 10 minutes.</li>
+</ol>
+
+<h2>Enable Lync Mode</h2>
+<p>After the phone has been upgraded, you must enable Lync Mode on the phone.</p>
+<ol>
+  <li>Hold down the key combo of 1, 4, &amp; 9 for three seconds. It will display the Base Profile page. The default password is ‘456’</li>
+  <li>Selec Lync as the Base Profile. The phone will reboot after the selection.</li>
+</ol>
+
+<h2>Sign in</h2>
+<p>There are two solutions for signing the phones in- Better Together over Ethernet (BToE) and Stand Alond Phone.</p>
+
+<h3>BToE Sign-in</h3>
+<p>First, we must enable BToE on the phone itself.</p>
+<ol>
+  <li>Click Home Button&gt; Settings&gt; Features&gt; BTOE</li>
+  <li>Enable BTOE
+Second, we must configure the workstation to pair with the phone.</li>
+  <li>Ensure your POlycom VVX Phone is tethered via Ethernet to your computer. The computer must be plugged in via wired/Ethernet connection that comes from the phone.</li>
+  <li>Ensure that the computer is not connected to Wi-Fi in addition to the wired Ethernet connection.</li>
+  <li>Download and install the latest version of Polycom BToE based on the firmware you have installed on your phone</li>
+  <li>Launch the Polycom BToE application. You should see a message declaring a successful pairing with the phone within a minute. Once all drivers are installed, the computer will prompt for a restart.</li>
+  <li>Log out of Skype for Business/Lync client and log back in.</li>
+  <li>Your client will prompt you to log in to the phone. This can be delayed up to a minute after signing into the software itself. Input the same credentials you use to lof into Skype for Business/Lync.</li>
+  <li>Once your phone is logged in, you will see BToE as an option on the home screen.</li>
+</ol>
+
+<h3>Stand Alone Phone Sign-in</h3>
+<p>Depending on your phone, you may be immediately prompted on the phone itself for log-in credentials when the phone boots up. If this is the case, you may enter your sign-in information directly. Enter your entire Skype for Business / Lync user address into both the Sign-in Address and User Name fields. Enter your Skype for Business / Lync password into the Password field. You may leave the Domain and other fields blank.</p>
+<p>You may also establish your credentials through the web configuration server.</p>
+<ol>
+  <li>Navigate to the phone’s IP address and sign in as admin (456).</li>
+  <li>Go to Utilities &gt; Lync SignIn</li>
+  <li>Enter your sign-in name, username and password.  You can leave domain, extension and pin blank.</li>
+  <li>Your phone will now be signed into Lync</li>
+</ol>
+
+
+                            </section>
+                    </div>
+                
+                   
+                </section>
+            </div>
+    
+            <!-- FOOTER  -->
+            <div class="container">
+    <div class="float-right">
+        <a href="https://training.t2mhosted.com/" target="_blank"><span class="text-muted">Training</span></a>
+        <span>&nbsp;<span id="SwitcherSep" style="display: none;">|</span>&nbsp;</span>
+        <a href="#" data-toggle="modal" data-target="#exampleModalCenter" id="TenantSwitcher" style="display: none;"><span class="text-muted">Switch Tenants</span></a> <span class="text-muted" id="SpanManagedName" style="display: none;"></span>
+        <span>&nbsp;|&nbsp;</span>
+        <a href="javascript:LogOutServices();" id="LogOff"><span class="text-muted">Log Out</span></a>
+    </div>
+    <div class="float-left"><span class="text-muted" id="PortalVersion">05.28.2019 BETA1</span></div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Select Tenant</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label style="font-weight: bold;">Available Customers</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="ddlTenantSwitcher" style="width: 100px;">Customer</label>
+                </div>
+                <select class="custom-select" id="ddlTenantSwitcher">
+                    <option value="">Select</option>
+                </select>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+    $("#SpanManagedName").html("(" + Cookies.get("ManagedName") + ")");
+    let SuperAdmin = false;
+    $(function() {
+        $.ajax({
+            type: "GET",
+            url: "https://api.t2mhosted.com/Customers/" + Cookies.get("GUID") + "/" + Cookies.get("CustomerID"),
+            contentType: "application/json;charset=utf-8",
+            processData: true,
+            success: function(data) {
+                //Load Table
+                $.each(data, function(i, obj) {
+                    $("#ddlTenantSwitcher").append($('<option>').text(obj.CustomerName).attr('value', obj.CustomerID));
+                });
+                //Select Active Customer
+                var managedCustomer = Cookies.get("ManagedID");
+                $("#ddlTenantSwitcher").val(managedCustomer);
+            },
+            error: function(xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    });
+    $(document.body).on('change', '#ddlTenantSwitcher', function () {
+        if (this.value !== "") {
+            if (SuperAdmin === true)
+            {
+                var thisText = $(this).find("option:selected").text();
+                Cookies.set("ManagedName", thisText, { secure: true });
+                Cookies.set("ManagedID", this.value, { secure: true });
+                location.reload();
+            }
+        }
+    });
+    $(document).ready(function () {
+        var PolicyUpdate = {
+            "CustomerID": Cookies.get("CustomerID"),
+            "UserID": Cookies.get("UserID"),
+            "GUID": Cookies.get("GUID"),
+            "Fingerprint": "",
+            "UpdateType": "",
+            "ID": "",
+            "Name": "",
+            "Value": "",
+            "SecValue": "",
+            "TerValue": ""
+        };
+        $.ajax({
+            type: "POST",
+            url: "https://api.t2mhosted.com/SecurityPermission",
+            data: JSON.stringify(PolicyUpdate),
+            contentType: "application/json;charset=utf-8",
+            processData: true,
+            success: function (data, status, xhr) {
+                if (data.ValidSession === false) {
+                    LogOutServices();
+                }
+                //Set Variables
+                SuperAdmin = data.SuperAdmin;
+                //Show Items
+                if (SuperAdmin === true)
+                {
+                    $("#TenantSwitcher").show();
+                    $("#SpanManagedName").show();
+                    $("#SwitcherSep").show();
+                }
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    });
+    function LogOutServices() {
+        //Remove All Cookies
+        Cookies.remove("UserName");
+        Cookies.remove("UserID");
+        Cookies.remove("GUID");
+        Cookies.remove("CustomerID");
+        Cookies.remove("ManagedID");
+        Cookies.remove("ManagedName");
+        //Redirect To Home
+        $(location).attr("href", "/index.html");
+    }
+</script>
+    
+            
+        </body>
+    </html>
+</html>

@@ -1,8 +1,7 @@
 ---
-layout: page
+layout: docs
 title: VVX Phone Setup
-menu: blog
-css: ['common.css']
+css: ['documents.css']
 ---
 
 <p>The purpose of this guide is to walk you through the successful installation of a VVX Phone for use with Skype for Business in conjunction with Time2Market Cloud Services. Please note that the screenshots used throughout this guide may not match your phone exactly, as there are minor differences between VVX models. However, the fundamental menus involved are similar across all devices. </p> 

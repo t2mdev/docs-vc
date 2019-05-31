@@ -1,0 +1,10 @@
+<div class="sidenav">
+    <ul>
+        {% for docs in site.docs %}
+        <li>
+            <a href="{{docs.url}}" {% if page.url == docs.url %} style="font-weight: bold;"{%endif%}>{{docs.title | markdownify}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+    
+  </div>
