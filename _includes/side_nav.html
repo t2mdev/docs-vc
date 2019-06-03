@@ -1,5 +1,8 @@
 <div class="sidenav">
     <ul>
+        <li>
+            <a href="/" {% if page.url == "/" %} style="font-weight: bold;"{%endif%}>Home</a>
+        </li>
         {% for docs in site.docs %}
         <li>
             <a href="{{docs.url}}" {% if page.url == docs.url %} style="font-weight: bold;"{%endif%}>{{docs.title | markdownify}}</a>
