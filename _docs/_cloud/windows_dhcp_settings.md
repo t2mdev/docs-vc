@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: Windows DHCP Configuration Steps
+depth: 1
 css: ['documents.css']
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: docs
 title: VVX Phone Setup
+depth: 1
 css: ['documents.css']
 ---
 
