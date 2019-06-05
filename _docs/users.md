@@ -1,9 +1,10 @@
 ---
 layout: docs
-title: Products Test
-subtitle: Nothing here
+title: Users Test
+depth: 2
 menu: blog
 css: ['documents.css']
+category: user
 ---
 
 ## Header2

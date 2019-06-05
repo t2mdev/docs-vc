@@ -4,8 +4,7 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
-        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
-        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v=">
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
         <title>T2M Training</title>
         <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
     </head>
@@ -42,61 +41,136 @@
                 </header>
             </div>
     
-            <!--NAVIGATION-->
+            <!--SIDE BAR NAVIGATION-->
             
             
 
-<ul>
+<div class="sidenav">
 
-  
-  
+    <ul>
+        <li>
+            <i class="fas fa-home"></i><a href="/" style="font-weight: bold;">Training Home</a>
+        </li>
 
-  
-
-  
-  
-
-  
-    <li>
-      <a href="/test.html">
-        
-          Blah Blah
-        
-      </a>
-
-      
-      
-      
-
-      
-    </li>
-  
-
-  
-  
-
-  
-    <li class="active">
-      <a href="/docs.html">
-        
-          
-        
-      </a>
-
-      
-      
-      
-
-      
-    </li>
-  
-
+        <ul>
+  <li><a href="#initial-login">Initial LogIn</a></li>
+  <li><a href="#accessing-the-portal">Accessing the Portal</a></li>
+  <li><a href="#navigating-the-dashboard">Navigating the Dashboard</a></li>
+  <li><a href="#windows-dhcp-settings">Windows DHCP Settings</a></li>
 </ul>
+        
+    </ul>
+  </div>
+            
     
             <!-- MAIN CONTENT -->
             <div id="main_content_wrap" class="outer">
                 <section id="main_content" class="inner">
                     
+
+                    <h1>CloudWorks</h1>
+                
+                    <div id="main_content_wrap" class="outer">
+                            <section id="main_content" class="inner">
+                                    <h2 id="initial-login">
+        
+        
+          Initial LogIn <a href="#initial-login"></a>
+        
+        
+      </h2>
+
+<p>When migrating from Office 365 to Time2Market’s Cloud Complete service, it is important to understand the process that your users will go through for their first login. The purpose of this document is to walk you through the steps your end users will need to take for their initial login to the client.</p>
+
+<ol>
+  <li>Open the client and click “Delete my sign-in info” on the login screen.</li>
+  <li>Choose Yes on the confirmation prompt:</li>
+  <li>Login to the client. Your username should be in the user@domain.com format.</li>
+  <li>You will see the following prompt. This is notifying you that you are logging into a new Skype for Business Server for the first time. Make sure to check “Always trust this server, do not show me this again” and then click Connect:</li>
+  <li>When you first login, your contact list will be empty. To search for users within your organization, simply start typing their first or last name into the “Find someone or dial a number” box. You may also search by e-mail address or work phone number.</li>
+</ol>
+    
+      <h2 id="accessing-the-portal">
+        
+        
+          Accessing the Portal <a href="#accessing-the-portal"></a>
+        
+        
+      </h2>
+
+<p>The portal is located at: https://portal.t2mhosted.com You will see a login screen that looks like this: 
+Login using your Skype for Business credentials (same username and password).</p>
+    
+      <h2 id="navigating-the-dashboard">
+        
+        
+          Navigating the Dashboard <a href="#navigating-the-dashboard"></a>
+        
+        
+      </h2>
+
+<p>Upon logging in, you will be brought to the Dashboard page of the portal as seen below:</p>
+
+<p>The Dashboard provides a broad overview of your organization’s cloud services in a few distinct sections.</p>
+
+<p>The Global Search bar, highlighted with a red box in the image above, allows you to instantly navigate to different sections of the portal. You can begin typing the name of any user in your organization in this box to jump to their Edit User page directly. You can also use the global search box to begin a number of administrative tasks such as modifying Call Groups, viewing reports, etc. To the right you will find the complete list of global search keywords. These search functions will display as a drop-down from the search box once you type a minimum of three characters – for example, you do not need to type “View Billing Information” in entirety – you can type “Billing” and the option will appear.  If you have any suggestions for new keywords or functionality for the global search bar, please submit suggestions to feedback@t2mdev.com.</p>
+
+<p>The blue header bar along the very top of the page displays live, at-a-glance metrics of your organization’s activity</p>
+
+<p>Next to the Phone icon you will see the number of active calls your users are engaged in.<br />
+Next to the Person icon you will see number of logged-in users. 
+Next to the Devices icon you will see the total number of devices active in your organization (e.g. one user logged into a PC, a mobile client, and a tablet will count for three devices).<br />
+TIP: You may click on any of these icons to get a full readout with more detailed information.</p>
+
+<p>In the main body of the page you will see three more readouts specific to your organization:</p>
+
+<p>Service Overview located top and center displays constantly-refreshed updates on the health of the system.<br />
+Recent Activity displays the most recent calls to or from your organization, along with a clickable telephone icon link to view an indepth call report (more on this later).<br />
+Past Incidents displays a history of recent service interruptions (or, more commonly, a lack thereof).</p>
+
+<p>Finally, the left sidebar provides easy navigation to the rest of the areas of the portal. Clicking on the downward arrow next to your organization name (in the top-left corner of the page) also provides the same navigation options. This can be useful to know, as the sidebar will disappear as you travel deeper into reporting pages within the portal.</p>
+    
+      <h2 id="windows-dhcp-settings">
+        
+        
+          Windows DHCP Settings <a href="#windows-dhcp-settings"></a>
+        
+        
+      </h2>
+<p>The following steps are needed to configure Pin Authentication for DHCP/Common Area Phones.  These steps must be completed for each location.</p>
+
+<p>If your site uses a Cisco Router for DHCP, download the Cisco DHCP Settings file and apply to your configuration.</p>
+
+<ol>
+  <li>Download the following two files from the portal. 
+a.	Windows_DHCP.bat 
+b.	DHCPConfigScript.bat</li>
+  <li>Copy each file to your DHCP Server to C:\DHCP\</li>
+  <li>Open Command Prompt as Administrator and navigate to the C:\DHCP folder</li>
+  <li>Run: Windows_DHCP.bat</li>
+  <li>The batch file will remove any existing scope options specific to Lync/Skype for Business and replace them with the correct values.</li>
+</ol>
+
+<p>To confirm your settings:</p>
+
+<ol>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Open up DHCP and navigate to your IPv4</td>
+          <td>Server Options.  You should now see the updated MSUCClient strings.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ol>
+
+<p>NOTE: If your CX Series phones were previously logged into another server via Pin Auth, you must do a reset of the phone to clear these settings.</p>
+                            </section>
+                    </div>
+                
+                   
                 </section>
             </div>
     

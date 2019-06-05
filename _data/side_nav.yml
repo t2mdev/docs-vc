@@ -1,8 +1,0 @@
-- name: Home
-  link: /
-
-- name: Docs
-  link: /phone_setup.md
-
-- name: Testing
-  link: /test.html

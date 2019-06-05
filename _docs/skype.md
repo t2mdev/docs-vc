@@ -1,10 +1,10 @@
 ---
 layout: docs
 title: Skype Test
-subtitle: Nothing here
 depth: 2
 menu: blog
 css: ['documents.css']
+category: skype
 ---
 
 ## Header2

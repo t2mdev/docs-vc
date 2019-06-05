@@ -1,6 +1,7 @@
 /*--------------
  T2M Colors
  #77C045 - green
+ #66a03f - dark green for gradient
  #784187 - purple
  #4c2c55 - purple hover
 
@@ -18,6 +19,11 @@
     margin: 2%
 }
 
+#header_wrap {
+
+    margin-left: 160px;
+    padding-left: 2%;
+}
 
 body {
     margin: 0;
@@ -46,8 +52,6 @@ body {
     flex-wrap: wrap;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     padding: 0.5rem 1rem;
     background: linear-gradient(to bottom, #77c045 0%, #66a03f 100%);
     color: #bbe0a2;
@@ -95,7 +99,6 @@ a {
     margin: 2% 5%;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-    border-radius: 15px 50px;
 }
 
 .button:hover{
