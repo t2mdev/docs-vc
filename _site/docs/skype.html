@@ -4,12 +4,15 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
         <title>T2M Training</title>
         <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
     </head>
     
+    <div id="main">
         <body>
+            
             <!-- HEADER -->
               <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
       <a class="navbar-brand" href="#">CloudWorks</a>
@@ -43,6 +46,44 @@
     
             <!--SIDE BAR NAVIGATION-->
             
+            <div id="toggle">
+            <div id="mySidebar" class="toggle_nav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
+    <ul>
+  <li><a href="#privacy-and-relationship-levels">Privacy and Relationship Levels</a></li>
+  <li><a href="#publishing-phone-numbers">Publishing Phone Numbers</a></li>
+  <li><a href="#scheduling-a-skype-for-business-meeting">Scheduling a Skype for Business Meeting</a></li>
+  <li><a href="#adjust-audio-and-video-settings">Adjust Audio and Video Settings</a></li>
+  <li><a href="#making-a-call">Making a Call</a></li>
+  <li><a href="#receiving-a-call">Receiving a Call</a></li>
+  <li><a href="#call-control-options">Call Control Options</a></li>
+  <li><a href="#presence-and-availability">Presence and Availability</a></li>
+  <li><a href="#call-forwarding">Call Forwarding</a></li>
+  <li><a href="#voicemail">Voicemail</a></li>
+  <li><a href="#communicating-with-skype-consumer-client-users">Communicating with Skype (Consumer client) Users</a></li>
+</ul>
+  </div>
+  
+  <div id="main_toggle">
+    <button class="openbtn" onclick="openNav()">☰ Contents</button> 
+    <button class="button" onclick="window.location='/';"><i class="fas fa-home"></i><div class="text">Home</div></button>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+            </div>
+
+            
+            <div id="full">
             
 
 <div class="sidenav">
@@ -68,6 +109,9 @@
         
     </ul>
   </div>
+            </div>
+
+
             
     
             <!-- MAIN CONTENT -->
@@ -432,5 +476,6 @@ Call-Forwarding Settings. Select Simultaneously Ring select Ring My Team Group. 
     
             
         </body>
+    </div>
     </html>
 </html>

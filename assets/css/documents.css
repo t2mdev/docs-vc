@@ -12,6 +12,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-size: 16px;
 }
 
 .outer, h2, h3 {
@@ -65,7 +66,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: #77C045;
+    background: linear-gradient(to bottom, #77c045 0%, #66a03f 100%);
     color: #bbe0a2;
     font-weight: bold;
     z-index: 99;
@@ -87,8 +88,13 @@ body {
     margin-top: 80px;
   }
 
+  /*------------------------------------------------------------------
+  Fixed Side Nav
+  ------------------------------------------------------------------*/
+
+
 .sidenav {
-    height: 85%;
+    height: 90%;
     width: 160px;
     position: fixed;
     z-index: 1;
@@ -102,13 +108,6 @@ body {
     
 }
 
-i {
-    float: left;
-    color: #4c2c55;
-    margin-left: 3%;
-    list-style: none;
-
-}
 .sidenav a {
     display: block;
     text-decoration: none;
@@ -122,12 +121,98 @@ i {
     background-color: darkgray;
 }
 
+/*------------------------------------------------------------
+Collapsible Side Nav
+-------------------------------------------------------------*/
+
+.toggle_nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #784187;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: #f1f1f1;
+  }
+  .toggle_nav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+    border-bottom: #f1f1f1;
+  }
+  
+  
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #f1f1f1;
+  }
+
+  .closebtn>i{
+      color: #f1f1f1;
+      font-size: 1em;
+  }
+  
+  .openbtn, .button {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #784187;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  i {
+      display: inline;
+  }
+
+  .text{
+      float: right;
+      padding-left: 1%;
+  }
+  
+  .openbtn:hover {
+    background-color: #4c2c55;
+  }
+  
+  #main_toggle {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+
+
 .inner {
     margin-top: 50px;
     margin-left: 5%;
 }
 
-footer {
-    float: right;
+.container {
+    text-align: right;
 }
 
+/* Hide the collapsible nav bar */
+
+@media screen and (min-width: 751px) {
+#toggle{ display: none;}
+}
+  /* On smaller screens, where width is less than 700:
+ -hide the default nav and display the collapsible nav 
+ -change margin of text */
+
+  @media screen and (max-width: 750px) {
+    .toggle_nav {padding-top: 15px;}
+    .toggle_nav a {font-size: 18px;}
+    .outer { margin-left: 5%;}
+    #full {display: none;}
+
+  }

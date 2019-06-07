@@ -4,12 +4,15 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
         <title>T2M Training</title>
         <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
     </head>
     
+    <div id="main">
         <body>
+            
             <!-- HEADER -->
               <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
       <a class="navbar-brand" href="#">CloudWorks</a>
@@ -43,6 +46,40 @@
     
             <!--SIDE BAR NAVIGATION-->
             
+            <div id="toggle">
+            <div id="mySidebar" class="toggle_nav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
+    <ul>
+  <li><a href="#what-is-skype-meeting-broadcast">What is “Skype Meeting Broadcast”?</a></li>
+  <li><a href="#technical-requirements">Technical Requirements</a></li>
+  <li><a href="#scheduling-skype-broadcast">Scheduling Skype Broadcast</a></li>
+  <li><a href="#customizing-your-broadcast-meeting">Customizing Your Broadcast Meeting</a></li>
+  <li><a href="#ensuring-a-positive-experience-on-event-day">Ensuring a Positive Experience on Event Day</a></li>
+  <li><a href="#starting-the-meeting">Starting the Meeting</a></li>
+  <li><a href="#ending-the-meeting">Ending the Meeting</a></li>
+</ul>
+  </div>
+  
+  <div id="main_toggle">
+    <button class="openbtn" onclick="openNav()">☰ Contents</button> 
+    <button class="button" onclick="window.location='/';"><i class="fas fa-home"></i><div class="text">Home</div></button>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+            </div>
+
+            
+            <div id="full">
             
 
 <div class="sidenav">
@@ -64,6 +101,9 @@
         
     </ul>
   </div>
+            </div>
+
+
             
     
             <!-- MAIN CONTENT -->
@@ -414,5 +454,6 @@ Set-CsBroadcastMeetingConfiguration –EnableBroadcastMeeting $True</p>
     
             
         </body>
+    </div>
     </html>
 </html>

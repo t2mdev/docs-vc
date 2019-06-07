@@ -4,12 +4,15 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
         <title>T2M Training</title>
         <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
     </head>
     
+    <div id="main">
         <body>
+            
             <!-- HEADER -->
               <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
       <a class="navbar-brand" href="#">CloudWorks</a>
@@ -43,6 +46,36 @@
     
             <!--SIDE BAR NAVIGATION-->
             
+            <div id="toggle">
+            <div id="mySidebar" class="toggle_nav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
+    <ul>
+  <li><a href="#initial-login">Initial LogIn</a></li>
+  <li><a href="#accessing-the-portal">Accessing the Portal</a></li>
+  <li><a href="#navigating-the-dashboard">Navigating the Dashboard</a></li>
+</ul>
+  </div>
+  
+  <div id="main_toggle">
+    <button class="openbtn" onclick="openNav()">☰ Contents</button> 
+    <button class="button" onclick="window.location='/';"><i class="fas fa-home"></i><div class="text">Home</div></button>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+            </div>
+
+            
+            <div id="full">
             
 
 <div class="sidenav">
@@ -56,11 +89,13 @@
   <li><a href="#initial-login">Initial LogIn</a></li>
   <li><a href="#accessing-the-portal">Accessing the Portal</a></li>
   <li><a href="#navigating-the-dashboard">Navigating the Dashboard</a></li>
-  <li><a href="#windows-dhcp-settings">Windows DHCP Settings</a></li>
 </ul>
         
     </ul>
   </div>
+            </div>
+
+
             
     
             <!-- MAIN CONTENT -->
@@ -124,44 +159,6 @@ Recent Activity displays the most recent calls to or from your organization, alo
 Past Incidents displays a history of recent service interruptions (or, more commonly, a lack thereof).</p>
 
 <p>Finally, the left sidebar provides easy navigation to the rest of the areas of the portal. Clicking on the downward arrow next to your organization name (in the top-left corner of the page) also provides the same navigation options. This can be useful to know, as the sidebar will disappear as you travel deeper into reporting pages within the portal.</p>
-    
-      <h2 id="windows-dhcp-settings">
-        
-        
-          Windows DHCP Settings <a href="#windows-dhcp-settings"></a>
-        
-        
-      </h2>
-<p>The following steps are needed to configure Pin Authentication for DHCP/Common Area Phones.  These steps must be completed for each location.</p>
-
-<p>If your site uses a Cisco Router for DHCP, download the Cisco DHCP Settings file and apply to your configuration.</p>
-
-<ol>
-  <li>Download the following two files from the portal. 
-a.	Windows_DHCP.bat 
-b.	DHCPConfigScript.bat</li>
-  <li>Copy each file to your DHCP Server to C:\DHCP\</li>
-  <li>Open Command Prompt as Administrator and navigate to the C:\DHCP folder</li>
-  <li>Run: Windows_DHCP.bat</li>
-  <li>The batch file will remove any existing scope options specific to Lync/Skype for Business and replace them with the correct values.</li>
-</ol>
-
-<p>To confirm your settings:</p>
-
-<ol>
-  <li>
-    <table>
-      <tbody>
-        <tr>
-          <td>Open up DHCP and navigate to your IPv4</td>
-          <td>Server Options.  You should now see the updated MSUCClient strings.</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-</ol>
-
-<p>NOTE: If your CX Series phones were previously logged into another server via Pin Auth, you must do a reset of the phone to clear these settings.</p>
                 </section>
             </div>
 
@@ -293,5 +290,6 @@ b.	DHCPConfigScript.bat</li>
     
             
         </body>
+    </div>
     </html>
 </html>

@@ -6,12 +6,15 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/documents.css?v=' | append: site.github.build_revision | relative_url }}"> 
         <title>T2M Training</title>
         <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
     </head>
     
+    <div id="main">
         <body>
+            
             <!-- HEADER -->
             {% include navigation.html %}
 
@@ -23,7 +26,16 @@
     
             <!--SIDE BAR NAVIGATION-->
             
+            <div id="toggle">
+            {% include collapse_sidenav.html %}
+            </div>
+
+            
+            <div id="full">
             {% include side_nav.html %}
+            </div>
+
+
             
     
             <!-- MAIN CONTENT -->
@@ -49,5 +61,6 @@
                 </script>
             {% endif %}
         </body>
+    </div>
     </html>
 </html>
