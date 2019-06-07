@@ -84,7 +84,7 @@ body {
   }
 
   #header_wrap {
-    margin-top: 10%;
+    margin-top: 80px;
   }
 
 .sidenav {
@@ -120,6 +120,11 @@ i {
 .sidenav a:hover {
     color: #4c2c55;
     background-color: darkgray;
+}
+
+.inner {
+    margin-top: 50px;
+    margin-left: 5%;
 }
 
 footer {

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,maximum-scale=2">
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
+        <title>T2M Training</title>
+        <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
+    </head>
+    
+        <body>
+            <!-- HEADER -->
+              <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <a class="navbar-brand" href="#">CloudWorks</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+              <li id="skype" class="nav-item">
+                  <a class="nav-link" href="/views/skype.html">Skype</a>
+              </li>
+              <li id="reports" class="nav-item">
+                  <a class="nav-link" href="/views/reports.html">Reports</a>
+              </li>
+              <li id="settings" class="nav-item">
+                  <a class="nav-link" href="/views/settings.html">Settings</a>
+              </li>
+              <li id="support" class="nav-item">
+                  <a class="nav-link" href="/views/support.html">Support</a>
+              </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+              <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+          </form>
+      </div>
+  </nav>
+
+
+            <div id="header_wrap" class="outer">
+                <header class="inner">
+                    <h1 id="project_title">T2M Cloud Training</h1>
+                </header>
+            </div>
+    
+            <!--SIDE BAR NAVIGATION-->
+            
+            
+
+<div class="sidenav">
+
+    <ul>
+        <li>
+            <a href="/" style="font-weight: bold;">Training Home</a>
+        </li>
+
+        <ul>
+  <li><a href="#what-is-skype-meeting-broadcast">What is “Skype Meeting Broadcast”?</a></li>
+  <li><a href="#technical-requirements">Technical Requirements</a></li>
+  <li><a href="#scheduling-skype-broadcast">Scheduling Skype Broadcast</a></li>
+  <li><a href="#customizing-your-broadcast-meeting">Customizing Your Broadcast Meeting</a></li>
+  <li><a href="#ensuring-a-positive-experience-on-event-day">Ensuring a Positive Experience on Event Day</a></li>
+  <li><a href="#starting-the-meeting">Starting the Meeting</a></li>
+  <li><a href="#ending-the-meeting">Ending the Meeting</a></li>
+</ul>
+        
+    </ul>
+  </div>
+            
+    
+            <!-- MAIN CONTENT -->
+            <div id="main_content_wrap" class="outer">
+                <h1>Skype Meeting Broadcast and T2M Cloud</h1>
+                <section id="main_content" class="inner">
+                    <h2 id="what-is-skype-meeting-broadcast">
+        
+        
+          What is “Skype Meeting Broadcast”? <a href="#what-is-skype-meeting-broadcast"></a>
+        
+        
+      </h2>
+
+<p>The new Skype Meeting Broadcast feature allows you to host extremely large meetings. This meeting is designed to be a town-hall style meeting where up to six presenters provide one-way communication to an audience of up to 10,000 users.</p>
+
+<p>The meeting attendees join via a web browser on their computer or mobile device to watch and listen to the meeting.  The meeting attendees do not have the ability to turn on their microphone and communicate via audio.  If feedback from attendees is desirable, a Yammer room can be created to allow your meeting attendees to communicate in real time via instant message.</p>
+
+<p>The following meeting types are best for Skype Meeting Broadcast:</p>
+
+<ul>
+  <li>Town hall Style Meetings</li>
+  <li>Meetings up to 10,000 users</li>
+  <li>Meetings that are sharing Video or PowerPoint information</li>
+</ul>
+
+<p>The following meeting types should NOT be used for Skype Meeting Broadcast:</p>
+
+<ul>
+  <li>Meetings that require attendees to participate in the audio conversation</li>
+  <li>Meetings that require participants to dial in via the PSTN (traditional phone network)</li>
+  <li>Meetings that require desktop sharing (Desktop Share can technically be done, but require a special adapter to convert your desktop share to a video source.)</li>
+</ul>
+    
+      <h2 id="technical-requirements">
+        
+        
+          Technical Requirements <a href="#technical-requirements"></a>
+        
+        
+      </h2>
+
+<p>There are several requirements that must be attended to before one can begin using Skype Meeting Broadcast</p>
+
+<ol>
+  <li>The user who is scheduling meetings must be created in Office 365 and have the Skype for Business Plan 2 license assigned to the user.</li>
+  <li>The user’s Login Name (UPN), SIP Address and E-mail (SMTP) Addresses must match exactly.</li>
+  <li>You must be using the Office 2013 MSI or Click to Run installer running in Skype for Business Mode or the Office 2016 Click to Run installer.  Using the Office 2016 MSI installer will not work.</li>
+  <li>Your tenant administrator must have enabled the service on your O365 Account.</li>
+  <li>Ensure the Skype for Business Online PowerShell tools are installed. They can be found <a href="http://go.microsoft.com/fwlink/?LinkId=294688">here</a></li>
+  <li>Launch PowerShell as Administrator.</li>
+  <li>Run the following commands, replacing “domain.onmicrosoft.com” with your tenant onmicrosoft domain name:</li>
+</ol>
+
+<p>Set-ExecutionPolicy Unrestricted 
+$Credential = get-credential 
+$LyncSession = New-CsOnlineSession -Credential $credential  –OverrideAdminDomain 
+“domain.onmicrosoft.com” 
+Import-PSSession $LyncSession 
+Set-CsBroadcastMeetingConfiguration –EnableBroadcastMeeting $True</p>
+    
+      <h2 id="scheduling-skype-broadcast">
+        
+        
+          Scheduling Skype Broadcast <a href="#scheduling-skype-broadcast"></a>
+        
+        
+      </h2>
+
+<p>In order to use Skype Meeting Broadcast, you must first schedule a meeting.</p>
+
+<ol>
+  <li>Open your browser and go to https://broadcast.skype.com</li>
+  <li>Login with your Office 365 Credentials</li>
+  <li>The welcome screen will display all of your existing broadcast meetings cheduled for this month</li>
+  <li>Click on New Meeting</li>
+</ol>
+
+<p>Next, you will be brought to the meeting creation page. Fill out the necessary information for the meeting:</p>
+
+<ul>
+  <li><strong>Meeting Details</strong> It is necessary to give your meeting a title and event time. You can start your broadcast meeting one (1) hour before the scheduled time and can last up to four (4) hours.</li>
+  <li><strong>Event Team</strong> The Event Team are the individuals who will be sharing a PowerPoint, Audio, or Video during the meeting.  You must specify at least one person.  You do not need to add yourself to the Event Team as the meeting organizer.</li>
+</ul>
+
+<p>There are two types of event team members: Presenters and Producers.  A presenter is someone who will be sharing Audio or Video.  A producer is someone who will control which camera is live.  If there is only a single audio/video source, then having a single person act as both producer and presenter is sufficient.</p>
+
+<ul>
+  <li><strong>Attendees</strong> Select who can join your meeting.  It is recommended to choose Anonymous or All Company.  Selecting All Company will require the users to login with their Office 365 account in order to watch the presentation</li>
+  <li><strong>Video Recording</strong> Select if you want your meeting to be recorded.</li>
+</ul>
+
+<p>Once all details have been entered, click Done and your meeting will be created. You may now return to the calendar page and verify that the meeting has been created</p>
+    
+      <h2 id="customizing-your-broadcast-meeting">
+        
+        
+          Customizing Your Broadcast Meeting <a href="#customizing-your-broadcast-meeting"></a>
+        
+        
+      </h2>
+
+<p>You can customize certain aspects of your meeting. This is entirely optional, but it allows you to add some functionality to the meeting beyond what is possible in the initial set-up.</p>
+
+<p>From the Skype Meeting Broadcast page, click on your meeting and select Customize from the top right. From here, you may add <strong>Audience Participation Apps</strong>. Remember that a Skype Broadcast Meeting does not allow for the audience to communicate over audio/video- if you want live feedback from the viewers of the meeting, this is the section where you can enable those features. You can add a Yammer Fee, Bing Pulse, and in the future, a Question/Answer feed</p>
+    
+      <h3 id="adding-a-yammer-group-feed-to-the-meeting">
+        
+        
+          Adding a Yammer Group Feed to the Meeting <a href="#adding-a-yammer-group-feed-to-the-meeting"></a>
+        
+        
+      </h3>
+
+<p>First, click on <strong>Right Panel App</strong>. Click the radio button next to Yammer and click Select. Then, simply enter the necessary information for your Yammer group.</p>
+    
+      <h3 id="custom-troubleshooting-and-support">
+        
+        
+          Custom Troubleshooting and Support <a href="#custom-troubleshooting-and-support"></a>
+        
+        
+      </h3>
+
+<p>Rather than the default Microsoft support link, you may also add a custom troubleshooting link for your audience to use if they experience issues with the meeting</p>
+
+<p>###Custom Content Link</p>
+
+<p>You may also set up a custom link for attendees so they may load content during the meeting. When you are finished setting up custom settings, click <strong>Done</strong> at the top of the screen to save.</p>
+
+<p>Using Outlook (or any other method) send out the Meeting URL for attendees and Team Members. When viewing your meeting in the portal, click Show LInk and copy/paste that URL and distribute.</p>
+    
+      <h2 id="ensuring-a-positive-experience-on-event-day">
+        
+        
+          Ensuring a Positive Experience on Event Day <a href="#ensuring-a-positive-experience-on-event-day"></a>
+        
+        
+      </h2>
+
+<p>A broadcast meeting typically has a large number of users. Thus, some prep work should be done prior to the meeting to ensure a positive experience for presenters and attendees both.</p>
+    
+      <h3 id="30-minutes-prior-to-meeting">
+        
+        
+          30 Minutes Prior to Meeting <a href="#30-minutes-prior-to-meeting"></a>
+        
+        
+      </h3>
+
+<p>Your presenters, organizers, and producers should login to the meeting using the Meeting Link at least thirty minutes prior to the meeting’s start time (you may join up to one hour before the scheduled start). Click the <strong>Sign in as even team member</strong> button to join.</p>
+
+<p>If you are not already logged into Office 365, it will prompt you to now. Depending on your browser, your Skype for Business client should join the meeting. Some browsers may prompt you before joining.</p>
+
+<p>When you join your Skype Meeting Broadcast, it will look very similar to a normal conference call.</p>
+
+<ul>
+  <li><strong>The Upper Left Corner</strong> will show all team members who are logged in. There can be a total of six people logged in.</li>
+  <li><strong>The lower left corner</strong> will show an IM conversation that can ONLY be seen by the event team members logged in.</li>
+</ul>
+
+<p>Have all event team members who are going to use audio and video start them at this time. Remember, if you have multiple event team members in the same room, only one should start their video/audio.</p>
+
+<p>Upload any PowerPoint presentations to the video conference at this time. It is recommended to put in a slide that welcomes people to the meeting to tell them when it will start.</p>
+    
+      <h3 id="15-minutes-prior-to-meeting">
+        
+        
+          15 Minutes Prior to Meeting <a href="#15-minutes-prior-to-meeting"></a>
+        
+        
+      </h3>
+
+<p>Decide what Audio/Video stream will be used to start the meeting. Right click on that user in the Participant List and choose <strong>Make Active Video for Broadcasting</strong>. You will see which video active at the top of the screen.</p>
+
+<p>It is important to note that any Event Team Member can mute another user. For the 15 minutes prior to the start of the broadcast, you man want use the Active Video.</p>
+
+<p>Lastly, choose how you want your content to be displayed.</p>
+<ul>
+  <li>Video Only</li>
+  <li>Video and Content</li>
+  <li>Content Only</li>
+</ul>
+    
+      <h2 id="starting-the-meeting">
+        
+        
+          Starting the Meeting <a href="#starting-the-meeting"></a>
+        
+        
+      </h2>
+
+<p>Once you are satisfied with your configuration, click the Start Broadcast button</p>
+
+<p><strong>NOTE: ONCE YOU HAVE STARTED A BROADCAST, YOU MAY NOT STOP IT. DOING SO WILL END THE MEETING AND MAKE THE MEETING URL INVALID FOR FUTURE USERS</strong></p>
+
+<p>Once you have started the meeting broadcast (it can take up to 5 minutes for it to start), any user who may have already joined via the web will see the video and PowerPoint share.</p>
+
+<p>When you are ready, have the producer unmute the audio of the presenter and start the broadcast meeting. Because of how the stream works, you should expect those watching on the web to be delayed by approximately 30 seconds from your live stream.</p>
+
+<p>Those joining from the web should click the green Join the Event button from their invite URL. Users joining from the web can paus, rewind, and fast forward the session.</p>
+    
+      <h2 id="ending-the-meeting">
+        
+        
+          Ending the Meeting <a href="#ending-the-meeting"></a>
+        
+        
+      </h2>
+
+<p>when your meeting is complete, click the Stop Broadcast button. It will warn you that you cannot restart the meeting once it’s stopped.</p>
+
+<p>Those who were watching on the web will be allowed to finish watching the event. Anyone who didn’t join the meeting before can still join the URL and re-watch the video. This feed is available for the next four hours.</p>
+
+<p>After the meeting has completed, you may visit https://broadcast.skype.com to access a number of post-meeting options.</p>
+<ul>
+  <li><strong>Reports</strong> You can download a list of all users who joined your meeting</li>
+  <li><strong>Video Recording</strong> A few hours after the meeting is complete, you can download a recording of your video that you can then share.</li>
+</ul>
+                </section>
+            </div>
+
+    
+            <!-- FOOTER  -->
+            <div class="container">
+    <div class="float-right">
+        <a href="https://training.t2mhosted.com/" target="_blank"><span class="text-muted">Training</span></a>
+        <span>&nbsp;<span id="SwitcherSep" style="display: none;">|</span>&nbsp;</span>
+        <a href="#" data-toggle="modal" data-target="#exampleModalCenter" id="TenantSwitcher" style="display: none;"><span class="text-muted">Switch Tenants</span></a> <span class="text-muted" id="SpanManagedName" style="display: none;"></span>
+        <span>&nbsp;|&nbsp;</span>
+        <a href="javascript:LogOutServices();" id="LogOff"><span class="text-muted">Log Out</span></a>
+    </div>
+    <div class="float-left"><span class="text-muted" id="PortalVersion">05.28.2019 BETA1</span></div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Select Tenant</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label style="font-weight: bold;">Available Customers</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="ddlTenantSwitcher" style="width: 100px;">Customer</label>
+                </div>
+                <select class="custom-select" id="ddlTenantSwitcher">
+                    <option value="">Select</option>
+                </select>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+    $("#SpanManagedName").html("(" + Cookies.get("ManagedName") + ")");
+    let SuperAdmin = false;
+    $(function() {
+        $.ajax({
+            type: "GET",
+            url: "https://api.t2mhosted.com/Customers/" + Cookies.get("GUID") + "/" + Cookies.get("CustomerID"),
+            contentType: "application/json;charset=utf-8",
+            processData: true,
+            success: function(data) {
+                //Load Table
+                $.each(data, function(i, obj) {
+                    $("#ddlTenantSwitcher").append($('<option>').text(obj.CustomerName).attr('value', obj.CustomerID));
+                });
+                //Select Active Customer
+                var managedCustomer = Cookies.get("ManagedID");
+                $("#ddlTenantSwitcher").val(managedCustomer);
+            },
+            error: function(xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    });
+    $(document.body).on('change', '#ddlTenantSwitcher', function () {
+        if (this.value !== "") {
+            if (SuperAdmin === true)
+            {
+                var thisText = $(this).find("option:selected").text();
+                Cookies.set("ManagedName", thisText, { secure: true });
+                Cookies.set("ManagedID", this.value, { secure: true });
+                location.reload();
+            }
+        }
+    });
+    $(document).ready(function () {
+        var PolicyUpdate = {
+            "CustomerID": Cookies.get("CustomerID"),
+            "UserID": Cookies.get("UserID"),
+            "GUID": Cookies.get("GUID"),
+            "Fingerprint": "",
+            "UpdateType": "",
+            "ID": "",
+            "Name": "",
+            "Value": "",
+            "SecValue": "",
+            "TerValue": ""
+        };
+        $.ajax({
+            type: "POST",
+            url: "https://api.t2mhosted.com/SecurityPermission",
+            data: JSON.stringify(PolicyUpdate),
+            contentType: "application/json;charset=utf-8",
+            processData: true,
+            success: function (data, status, xhr) {
+                if (data.ValidSession === false) {
+                    LogOutServices();
+                }
+                //Set Variables
+                SuperAdmin = data.SuperAdmin;
+                //Show Items
+                if (SuperAdmin === true)
+                {
+                    $("#TenantSwitcher").show();
+                    $("#SpanManagedName").show();
+                    $("#SwitcherSep").show();
+                }
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    });
+    function LogOutServices() {
+        //Remove All Cookies
+        Cookies.remove("UserName");
+        Cookies.remove("UserID");
+        Cookies.remove("GUID");
+        Cookies.remove("CustomerID");
+        Cookies.remove("ManagedID");
+        Cookies.remove("ManagedName");
+        //Redirect To Home
+        $(location).attr("href", "/index.html");
+    }
+</script>
+    
+            
+        </body>
+    </html>
+</html>
