@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,maximum-scale=2">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
+        <title>T2M Training</title>
+        <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
+    </head>
+    
+    <div id="main">
+        <body>
+            
+            <!-- HEADER -->
+              <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+      <a class="navbar-brand" href="#">CloudWorks</a>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+              <li id="skype" class="nav-item">
+                  <a class="nav-link" href="/views/skype.html">Skype</a>
+              </li>
+              <li id="reports" class="nav-item">
+                  <a class="nav-link" href="/views/reports.html">Reports</a>
+              </li>
+              <li id="settings" class="nav-item">
+                  <a class="nav-link" href="/views/settings.html">Settings</a>
+              </li>
+              <li id="support" class="nav-item">
+                  <a class="nav-link" href="/views/support.html">Support</a>
+              </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+              <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+          </form>
+      </div>
+  </nav>
+
+
+            <div id="header_wrap" class="outer">
+                <header class="inner">
+                    <h1 id="project_title">T2M Cloud Training</h1>
+                </header>
+            </div>
+    
+            <!--SIDE BAR NAVIGATION-->
+            
+            <div id="toggle">
+            <div id="mySidebar" class="toggle_nav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
+    <div class="menu_links">
+    <ul>
+  <li><a href="#call-history">Call History</a></li>
+  <li><a href="#call-forwarding">Call Forwarding</a></li>
+  <li><a href="#edit-user">Edit User</a></li>
+  <li><a href="#change-password">Change Password</a></li>
+  <li><a href="#enabling-a-new-user">Enabling a New User</a></li>
+  <li><a href="#delegating-portal-administration-powers">Delegating Portal Administration Powers</a></li>
+</ul>
+  </div>
+  </div>
+  
+  <div id="main_toggle">
+    <button class="openbtn" onclick="openNav()">☰ Contents</button> 
+    <button class="button" onclick="window.location='/';"><i class="fas fa-home"></i><div class="text">Home</div></button>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+            </div>
+
+            
+            <div id="full">
+            
+
+<div class="sidenav">
+
+    <ul>
+        <li>
+            <a href="/" style="font-weight: bold;">Training Home</a>
+        </li>
+
+        <ul>
+  <li><a href="#call-history">Call History</a></li>
+  <li><a href="#call-forwarding">Call Forwarding</a></li>
+  <li><a href="#edit-user">Edit User</a></li>
+  <li><a href="#change-password">Change Password</a></li>
+  <li><a href="#enabling-a-new-user">Enabling a New User</a></li>
+  <li><a href="#delegating-portal-administration-powers">Delegating Portal Administration Powers</a></li>
+</ul>
+        
+    </ul>
+  </div>
+            </div>
+
+
+            
+    
+            <!-- MAIN CONTENT -->
+            <div id="main_content_wrap" class="outer">
+                <h1>User Management</h1>
+                <section id="main_content" class="inner">
+                    <p>The Users page is a powerful area of the portal that allows for the administration of individual user accounts:</p>
+
+<p>The first 25 users in your organization are displayed automatically upon loading the page; for larger organizations, you may user the search bar to locate individual users. Displayed next to each user are three clickable links: Call History, Call Forwarding and Edit User. 
+(TIP: Double-clicking anywhere within a user’s row will also open their Edit User page)</p>
+      <h2 id="call-history">
+        
+        
+          Call History <a href="#call-history"></a>
+        
+        
+      </h2>
+
+<p>Call History will bring you to a personalized Call Detail Record page for the user, including some basic info on their account details:</p>
+
+<p>Under General Information on the left, you will find the user’s SIP Address, the License Requirements of their account (dependent upon their active features), and whether PSTN Voice is enabled. (PSTN Voice describes whether the user account can place calls to traditional phone numbers). To the right you will see the user’s last 10 calls (conferences excluded). Double-clicking on any of these calls will bring you to the in-depth Call Detail page for that call, described more thoroughly in a later section.</p>
+    
+      <h2 id="call-forwarding">
+        
+        
+          Call Forwarding <a href="#call-forwarding"></a>
+        
+        
+      </h2>
+
+<p>Call Forwarding allows you to view and edit the Call Forwarding settings for any user in your organization. When you first click the Call Forwarding link in a user’s row, you will be brought to the following setting screen displaying their current settings:</p>
+
+<p>From this page you can alter the user’s call forwarding settings.</p>
+
+<p><strong>Incoming Calls</strong> can be set to either forward calls to or simultaneously ring 1) another Skype for Business user or 2) a telephone number. Calls can also be forwarded directly to Voicemail.</p>
+
+<p><strong>Unanswered Calls</strong> can be set to go to Voicemail, another Skype for Business user, or a telephone number in anywhere from 5 to 60 seconds (in 5 second increments).</p>
+
+<p>Once you change a setting, a Save button will appear. Once clicked, these changes will be reflected in the user’s client immediately.</p>
+
+<p>The <strong>Team Members</strong> and <strong>Delegate Members</strong> tabs allow you to view the user’s team and delegate settings. At this time, technical limitations prevent remotely changing delegate relationships through the portal.</p>
+    
+      <h2 id="edit-user">
+        
+        
+          Edit User <a href="#edit-user"></a>
+        
+        
+      </h2>
+
+<p>The Edit User page allows for the management of specific users’ account settings. There are four tabs where user information can be modified:</p>
+    
+      <h3 id="skype-options">
+        
+        
+          Skype Options <a href="#skype-options"></a>
+        
+        
+      </h3>
+
+<p>NOTE: Your options may vary depending on your organization and policies available.</p>
+
+<p><strong>Enterprise Voice</strong> must be checked in order for the user to have access to PSTN features. If unchecked, the user will not be able to communicate with traditional phone users.</p>
+
+<p><strong>Line UR</strong>I is the assigned phone number and extension for the user. Clicking on this dropdown box will display a list of all available unassigned numbers that can be assigned to the user.</p>
+
+<p><strong>Private Line URI</strong> is a secondary, private line for the user that will ignore all delegate and team-ring rules otherwise established for the user’s main line. It is not necessary to assign a private line.</p>
+
+<p><strong>911 Policy</strong> is extremely important – this determines how outgoing 911 calls from the user are routed. For organizations with one office, there will only be one 911 policy – however, organizations with multiple locations (or even multiple floors within a single building) must ensure that users have the proper 911 policy attached.</p>
+
+<p><strong>Client Policy</strong> is the policy that applies to the user’s Skype for Business client.</p>
+
+<p><strong>External Access Policy</strong> controls if the user is able to communicate with federated partners or Skype Consumer clients</p>
+    
+      <h3 id="user-pin">
+        
+        
+          User PIN <a href="#user-pin"></a>
+        
+        
+      </h3>
+
+<p>The User PIN tab allows you to set a PIN that serves two purposes, described in the screenshot below (and on the tab itself within the portal):</p>
+
+<p>User PIN is not a necessary setting for most Skype for Business setups. In fact, it only serves two purposes – and if your organization does not use PIN Authentication for your phones, and you anticipate every conference call containing at least one Skype for Business user present, you do not need to worry about setting a User PIN for any user.</p>
+    
+      <h3 id="contact-cardaddress">
+        
+        
+          Contact Card/Address <a href="#contact-cardaddress"></a>
+        
+        
+      </h3>
+
+<p>These tabs allow you to modify the user’s Contact Card and Address information. This is not required. It is important to note that this information is publicly accessible to the user’s contacts in Skype for Business.</p>
+
+<p>It is also important to note that users with on premise Active Directory cannot make these changes in the Portal; they must be made within Active Directory instead.</p>
+    
+      <h2 id="change-password">
+        
+        
+          Change Password <a href="#change-password"></a>
+        
+        
+      </h2>
+
+<p>Changing a user’s password is very straightforward within the portal. Once you have navigated to a user’s Edit User page, simply click Change Password</p>
+
+<p>This will bring you to the Change Password page, where the instructions and password guidelines are notated:</p>
+    
+      <h2 id="enabling-a-new-user">
+        
+        
+          Enabling a New User <a href="#enabling-a-new-user"></a>
+        
+        
+      </h2>
+
+<p>Prerequisites: If you do have an on premise Active Directory environment, ensure that the user has been added to the appropriate sync group. If you do not have an on premise Active Directory environment (or are unsure what that means), ensure that you have contacted T2M Support to create the user’s cloud account.</p>
+
+<ol>
+  <li>Navigate to the Users tab by logging into the portal and clicking on “Users” on the left sidebar:</li>
+  <li>Within the Users tab, click on “Enable Users” at the top right of the screen:</li>
+  <li>This will open the New User dialog. The user you wish to enable should be listed here:(If the user you wish to add does not appear, please double check that the prerequisite step earlier in this section was completed) Check the box next to the user(s) that you wish to enable and click Move to Next Step.</li>
+  <li>Select the appropriate configurations for the user(s):</li>
+</ol>
+
+<p>If your user will be using PSTN features, you will need to check the Enterprise Voice box. Select the appropriate Dial Plan, Client Policy, and External Access Policy for your user and then click Enable Users to save.</p>
+
+<p>Your user is now enabled for Cloud Complete!</p>
+    
+      <h2 id="delegating-portal-administration-powers">
+        
+        
+          Delegating Portal Administration Powers <a href="#delegating-portal-administration-powers"></a>
+        
+        
+      </h2>
+
+<p>The Cloud Complete Portal offers the ability to delegate administrative powers to different users in your organization in an extremely granular way. Using the Users &amp; Roles menu, you can add users to five different administrative roles with different levels of control:</p>
+
+<p>If none of the preset roles suit your exact need, you can create your own custom organization roles as well.</p>
+
+<p>To access the Users &amp; Roles menu, hover your mouse over your name in the top-corner of the Portal and click Users &amp; Roles:</p>
+    
+      <h3 id="users-tab">
+        
+        
+          Users Tab <a href="#users-tab"></a>
+        
+        
+      </h3>
+
+<p>Once you click Users &amp; Roles, you will be brought to the Users tab. This shows your existing administrative users and the roles they own:</p>
+
+<p>From here you may Add, Edit and Delete users to the preset roles available. Clicking Edit in a user’s row will allow you to change their access level as well as view their current powers in the portal:</p>
+
+<p>To Add a user to a preset role, click Add User. You will be brought to this page:</p>
+
+<p>Simply begin typing the name of any user in your organization in the Name Search box – they will populate automatically. Please note that users must already be active with Enterprise Voice in order to be selected as an administrative user. Select the appropriate preset from the Permissions drop-down and click Add User to save.</p>
+    
+      <h3 id="roles-tab">
+        
+        
+          Roles Tab <a href="#roles-tab"></a>
+        
+        
+      </h3>
+
+<p>Click on “Roles” as in the screenshot below to navigate to the Roles tab, where you may set up custom roles for your organization:</p>
+
+<p>This will bring you to the Roles page, which displays a readout of the permissions granted to each of the preset roles, as well as a listing of your organization’s existing custom roles. Click Add Role to add a new custom role:</p>
+
+<p>The Add Role page allows you to mix and match Read and Edit capabilities for a variety of Portal functions:</p>
+
+<p><strong>Manage Users &amp; Roles</strong> allows the user to add, edit, and delete users and roles – this is the highest level of access, and we recommend that it be reserved for global administrators.<br />
+<strong>Billing Menu</strong> allows the user access to the billing menu for license information.<br />
+<strong>Support Menu</strong> allows the user to submit support requests to the Time2Market Cloud support team.</p>
+
+<p><strong>Users, Common Area, Meeting Rooms and Call Groups</strong> – if Read is checked, the administrator will be able to view existing information regarding these users / rooms / groups. If Edit is checked, the administrator will be able to reset passwords, change user phone numbers, edit call group membership, etc.</p>
+
+<p>To create a custom role, select the options you would like available, enter a Role Name and click Save Changes &amp; Add Role. Remember to add user to the role group once the role is created.</p>
+                </section>
+            </div>
+
+    
+            <!-- FOOTER  -->
+            <div class="container">
+    <div class="float-right">
+        <a href="https://training.t2mhosted.com/" target="_blank"><span class="text-muted">Training</span></a>
+        <span>&nbsp;<span id="SwitcherSep" style="display: none;">|</span>&nbsp;</span>
+        <a href="#" data-toggle="modal" data-target="#exampleModalCenter" id="TenantSwitcher" style="display: none;"><span class="text-muted">Switch Tenants</span></a> <span class="text-muted" id="SpanManagedName" style="display: none;"></span>
+        <span>&nbsp;|&nbsp;</span>
+        <a href="javascript:LogOutServices();" id="LogOff"><span class="text-muted">Log Out</span></a>
+    </div>
+    <div class="float-left"><span class="text-muted" id="PortalVersion">05.28.2019 BETA1</span></div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Select Tenant</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label style="font-weight: bold;">Available Customers</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="ddlTenantSwitcher" style="width: 100px;">Customer</label>
+                </div>
+                <select class="custom-select" id="ddlTenantSwitcher">
+                    <option value="">Select</option>
+                </select>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+    $("#SpanManagedName").html("(" + Cookies.get("ManagedName") + ")");
+    let SuperAdmin = false;
+    $(function() {
+        $.ajax({
+            type: "GET",
+            url: "https://api.t2mhosted.com/Customers/" + Cookies.get("GUID") + "/" + Cookies.get("CustomerID"),
+            contentType: "application/json;charset=utf-8",
+            processData: true,
+            success: function(data) {
+                //Load Table
+                $.each(data, function(i, obj) {
+                    $("#ddlTenantSwitcher").append($('<option>').text(obj.CustomerName).attr('value', obj.CustomerID));
+                });
+                //Select Active Customer
+                var managedCustomer = Cookies.get("ManagedID");
+                $("#ddlTenantSwitcher").val(managedCustomer);
+            },
+            error: function(xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    });
+    $(document.body).on('change', '#ddlTenantSwitcher', function () {
+        if (this.value !== "") {
+            if (SuperAdmin === true)
+            {
+                var thisText = $(this).find("option:selected").text();
+                Cookies.set("ManagedName", thisText, { secure: true });
+                Cookies.set("ManagedID", this.value, { secure: true });
+                location.reload();
+            }
+        }
+    });
+    $(document).ready(function () {
+        var PolicyUpdate = {
+            "CustomerID": Cookies.get("CustomerID"),
+            "UserID": Cookies.get("UserID"),
+            "GUID": Cookies.get("GUID"),
+            "Fingerprint": "",
+            "UpdateType": "",
+            "ID": "",
+            "Name": "",
+            "Value": "",
+            "SecValue": "",
+            "TerValue": ""
+        };
+        $.ajax({
+            type: "POST",
+            url: "https://api.t2mhosted.com/SecurityPermission",
+            data: JSON.stringify(PolicyUpdate),
+            contentType: "application/json;charset=utf-8",
+            processData: true,
+            success: function (data, status, xhr) {
+                if (data.ValidSession === false) {
+                    LogOutServices();
+                }
+                //Set Variables
+                SuperAdmin = data.SuperAdmin;
+                //Show Items
+                if (SuperAdmin === true)
+                {
+                    $("#TenantSwitcher").show();
+                    $("#SpanManagedName").show();
+                    $("#SwitcherSep").show();
+                }
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    });
+    function LogOutServices() {
+        //Remove All Cookies
+        Cookies.remove("UserName");
+        Cookies.remove("UserID");
+        Cookies.remove("GUID");
+        Cookies.remove("CustomerID");
+        Cookies.remove("ManagedID");
+        Cookies.remove("ManagedName");
+        //Redirect To Home
+        $(location).attr("href", "/index.html");
+    }
+</script>
+    
+            
+        </body>
+    </div>
+    </html>
+</html>

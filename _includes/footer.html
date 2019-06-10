@@ -1,46 +1,123 @@
-<footer class="container">
-
-    <div class="site-footer">
-
-        <div class="copyright pull-left">
-            <!-- Please keep this line to let others know where this theme comes from. Thank you :D -->
-            Inspired by <a href="https://github.com/DONGChuan/Yummy-Jekyll">Yummy Jekyll</a> updated by me.
-        </div>
-
-        <a href="https://github.com/rbrynteson/theargylemvp" target="_blank" aria-label="view source code">
-            <span class="mega-octicon octicon-mark-github" title="GitHub"></span>
-        </a>
-
-        <div class="pull-right">
-            <a href="javascript:window.scrollTo(0,0)" >TOP</a>
-        </div>
-
+<div class="container">
+    <div class="float-right">
+        <a href="https://training.t2mhosted.com/" target="_blank"><span class="text-muted">Training</span></a>
+        <span>&nbsp;<span id="SwitcherSep" style="display: none;">|</span>&nbsp;</span>
+        <a href="#" data-toggle="modal" data-target="#exampleModalCenter" id="TenantSwitcher" style="display: none;"><span class="text-muted">Switch Tenants</span></a> <span class="text-muted" id="SpanManagedName" style="display: none;"></span>
+        <span>&nbsp;|&nbsp;</span>
+        <a href="javascript:LogOutServices();" id="LogOff"><span class="text-muted">Log Out</span></a>
     </div>
+    <div class="float-left"><span class="text-muted" id="PortalVersion">05.28.2019 BETA1</span></div>
+</div>
 
-    <!-- Third-Party JS -->
-    <script type="text/javascript" src="/assets/js/geopattern-1.2.3.min.js"></script>
-
-    <!-- My JS -->
-    <script type="text/javascript" src="/assets/js/script.js"></script>
-
-    {% for javascript in page.javascript %}
-    <script src="/assets/js/{{javascript}}"></script>
-    {% endfor %}
-
-    {% if site.analytics.google.tracking_id %}
-    <!-- Google Analytics -->
-    <div style="display:none">
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', '{{ site.analytics.google.tracking_id }}', 'auto');
-            ga('send', 'pageview');
-
-        </script>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">Select Tenant</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <label style="font-weight: bold;">Available Customers</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="ddlTenantSwitcher" style="width: 100px;">Customer</label>
+                </div>
+                <select class="custom-select" id="ddlTenantSwitcher">
+                    <option value="">Select</option>
+                </select>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
     </div>
-    {% endif %}
+  </div>
 
-</footer>
+<script type="text/javascript">
+    $("#SpanManagedName").html("(" + Cookies.get("ManagedName") + ")");
+    let SuperAdmin = false;
+    $(function() {
+        $.ajax({
+            type: "GET",
+            url: "https://api.t2mhosted.com/Customers/" + Cookies.get("GUID") + "/" + Cookies.get("CustomerID"),
+            contentType: "application/json;charset=utf-8",
+            processData: true,
+            success: function(data) {
+                //Load Table
+                $.each(data, function(i, obj) {
+                    $("#ddlTenantSwitcher").append($('<option>').text(obj.CustomerName).attr('value', obj.CustomerID));
+                });
+                //Select Active Customer
+                var managedCustomer = Cookies.get("ManagedID");
+                $("#ddlTenantSwitcher").val(managedCustomer);
+            },
+            error: function(xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    });
+    $(document.body).on('change', '#ddlTenantSwitcher', function () {
+        if (this.value !== "") {
+            if (SuperAdmin === true)
+            {
+                var thisText = $(this).find("option:selected").text();
+                Cookies.set("ManagedName", thisText, { secure: true });
+                Cookies.set("ManagedID", this.value, { secure: true });
+                location.reload();
+            }
+        }
+    });
+    $(document).ready(function () {
+        var PolicyUpdate = {
+            "CustomerID": Cookies.get("CustomerID"),
+            "UserID": Cookies.get("UserID"),
+            "GUID": Cookies.get("GUID"),
+            "Fingerprint": "",
+            "UpdateType": "",
+            "ID": "",
+            "Name": "",
+            "Value": "",
+            "SecValue": "",
+            "TerValue": ""
+        };
+        $.ajax({
+            type: "POST",
+            url: "https://api.t2mhosted.com/SecurityPermission",
+            data: JSON.stringify(PolicyUpdate),
+            contentType: "application/json;charset=utf-8",
+            processData: true,
+            success: function (data, status, xhr) {
+                if (data.ValidSession === false) {
+                    LogOutServices();
+                }
+                //Set Variables
+                SuperAdmin = data.SuperAdmin;
+                //Show Items
+                if (SuperAdmin === true)
+                {
+                    $("#TenantSwitcher").show();
+                    $("#SpanManagedName").show();
+                    $("#SwitcherSep").show();
+                }
+            },
+            error: function (xhr) {
+                alert(xhr.responseText);
+            }
+        });
+    });
+    function LogOutServices() {
+        //Remove All Cookies
+        Cookies.remove("UserName");
+        Cookies.remove("UserID");
+        Cookies.remove("GUID");
+        Cookies.remove("CustomerID");
+        Cookies.remove("ManagedID");
+        Cookies.remove("ManagedName");
+        //Redirect To Home
+        $(location).attr("href", "/index.html");
+    }
+</script>

@@ -4,15 +4,15 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
-        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/home.css?v=">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
         <title>T2M Training</title>
         <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
     </head>
     
+    <div id="main">
         <body>
+            
             <!-- HEADER -->
               <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
       <a class="navbar-brand" href="#">CloudWorks</a>
@@ -44,26 +44,116 @@
                 </header>
             </div>
     
+            <!--SIDE BAR NAVIGATION-->
+            
+            <div id="toggle">
+            <div id="mySidebar" class="toggle_nav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
+    <div class="menu_links">
+    <ul>
+  <li><a href="#helpful-links">Helpful Links</a></li>
+  <li><a href="#skype-for-business-a-quick-introduction">Skype for Business: A Quick Introduction</a></li>
+  <li><a href="#skype-for-business-a-step-by-step-guide-for-new-users">Skype for Business: A step-by-step guide for new users</a></li>
+  <li><a href="#skype-for-business-whats-new-in-the-client">Skype for Business: What’s new in the client</a></li>
+</ul>
+  </div>
+  </div>
+  
+  <div id="main_toggle">
+    <button class="openbtn" onclick="openNav()">☰ Contents</button> 
+    <button class="button" onclick="window.location='/';"><i class="fas fa-home"></i><div class="text">Home</div></button>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+            </div>
+
+            
+            <div id="full">
+            
+
+<div class="sidenav">
+
+    <ul>
+        <li>
+            <a href="/" style="font-weight: bold;">Training Home</a>
+        </li>
+
+        <ul>
+  <li><a href="#helpful-links">Helpful Links</a></li>
+  <li><a href="#skype-for-business-a-quick-introduction">Skype for Business: A Quick Introduction</a></li>
+  <li><a href="#skype-for-business-a-step-by-step-guide-for-new-users">Skype for Business: A step-by-step guide for new users</a></li>
+  <li><a href="#skype-for-business-whats-new-in-the-client">Skype for Business: What’s new in the client</a></li>
+</ul>
+        
+    </ul>
+  </div>
+            </div>
+
+
+            
     
             <!-- MAIN CONTENT -->
             <div id="main_content_wrap" class="outer">
-                    <div class="row">
+                <h1>Other Resources</h1>
+                <section id="main_content" class="inner">
+                    <h2 id="helpful-links">
+        
+        
+          Helpful Links <a href="#helpful-links"></a>
+        
+        
+      </h2>
 
-                        <button class="button" onclick="window.location='docs/cloud.html';"><i class="fas fa-cloud"></i><br><div class="text">CloudWorks</div></button>
-                        <button class="button" onclick="window.location='docs/skype.html';"><i class="fab fa-skype"></i><br><div class="text">Skype Basics</div></button>
-                        <button class="button" onclick="window.location='docs/skype_broadcast.html';"><i class="fas fa-satellite-dish"></i><br><div class="text">Skype Broadcast</div></button>
-                        <button class="button" onclick="window.location='docs/clarity.html';"><i class="fas fa-headset"></i><br><div class="text">Clarity Connect</div></button>
-                        <button class="button" onclick="window.location='docs/products.html';"><i class="fas fa-laptop"></i><br><div class="text">Compatible Products</div></button>
-                        
-                   
+<p><a href="https://support.office.com/en-us/article/video-communicate-your-way-c50059a4-9114-4c81-8581-bd4fd6e97fc6?ui=en-US&amp;rs=en-US&amp;ad=US" target="_blank">How to Communicate</a></p>
 
-                        <button class="button" onclick="window.location='docs/users.html';"><i class="far fa-address-book"></i><br><div class="text">User Management</div></button>
-                        <button class="button" onclick="window.location='docs/reports.html';"><i class="fas fa-chart-line"></i><br><div class="text">Run Reports</div></button>
-                        <button class="button" onclick="window.location='docs/phones.html';"><i class="fas fa-phone"></i><br><div class="text">Phone Basics</div></button> 
-                        <button class="button" onclick="window.location='docs/setup.html';"><i class="fas fa-tools"></i><br><div class="text">Device Setup</div></button>
-                        <button class="button" onclick="window.location='docs/resources.html';"><i class="far fa-question-circle"></i><div class="text">Other Resrouces</div></button>
-                    </div>
+<p><a href="https://support.office.com/en-us/article/video-complete-meeting-solution-518a36ec-8b7d-4c12-a77a-f4a2c9f47e45?ui=en-US&amp;rs=en-US&amp;ad=US" target="_blank">Using Skype for Business Meetings</a></p>
+
+<p><a href="authorized_use.html">Cloud Complete Authorized Use Policy</a></p>
+
+<p><a href="cookies.html">Cookies and Privacy Policy</a></p>
+    
+      <h2 id="skype-for-business-a-quick-introduction">
+        
+        
+          Skype for Business: A Quick Introduction <a href="#skype-for-business-a-quick-introduction"></a>
+        
+        
+      </h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PRJqMuwW5yc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    
+      <h2 id="skype-for-business-a-step-by-step-guide-for-new-users">
+        
+        
+          Skype for Business: A step-by-step guide for new users <a href="#skype-for-business-a-step-by-step-guide-for-new-users"></a>
+        
+        
+      </h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7_c4zVJ739M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    
+      <h2 id="skype-for-business-whats-new-in-the-client">
+        
+        
+          Skype for Business: What’s new in the client <a href="#skype-for-business-whats-new-in-the-client"></a>
+        
+        
+      </h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/96Ti06ETHC0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </section>
             </div>
+
     
             <!-- FOOTER  -->
             <div class="container">
@@ -192,12 +282,6 @@
     
             
         </body>
-        
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </div>
     </html>
 </html>
-
