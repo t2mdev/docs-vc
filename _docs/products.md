@@ -30,7 +30,7 @@ All devices appearing in the list below have been tested and certified as suppor
 ## Conference Room ##
 
 * <a href="http://www.polycom.com/products-services/products-for-microsoft/lyncoptimized/cx3000-conference-phone.html" target="_blank">Polycom CX3000 Conference Phone</a>	 	 
-* <a href="http://www.polycom.com/voice-conferencing-solutions/conferencephones/realpresence-trio.html"target="_blank">Polycom RealPresence Trio</a>
+* <a href="http://www.polycom.com/voice-conferencing-solutions/conferencephones/realpresence-trio.html" target="_blank">Polycom RealPresence Trio</a>
 * <a href="http://www.polycom.com/products-services/products-for-microsoft/lyncoptimized/cx5100-unified-conference-station.html" target="_blank">Polycom Round CX5100</a>	 	 
 * <a href="http://www.polycom.com/products-services/products-for-microsoft/lyncoptimized/cx5500-unified-conference-station.html" target="_blank">Polycom Round CX5500</a>	 	 
 * <a href="http://www.plantronics.com/us/product/calisto-600?skuId=sku6250018" target="_blank">Plantronics Calisto P620-M</a>	 

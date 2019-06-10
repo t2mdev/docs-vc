@@ -49,6 +49,9 @@ body {
     background-color: #fff;
   }
 
+  /*---------------------------------------------------------------------
+  Top Navigation
+  ---------------------------------------------------------------------*/
   .navbar li {
       display: inline;
       list-style: none;
@@ -132,19 +135,32 @@ Collapsible Side Nav
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #784187;
+    background-color: #f5f5f5;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    color: #f1f1f1;
+    color: #784187;
+
   }
   .toggle_nav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 18px;
-    color: #f1f1f1;
+    color: #784187;
     display: block;
-    border-bottom: #f1f1f1;
+    
+  }
+
+  .menu_links {
+    margin-top: 40px;
+  }
+
+  .menu_links a{
+    border-bottom: 1px solid #d9d9d9;
+  }
+  .menu_links a:hover {
+    background-color: darkgray;
+    color: #4c2c55;
   }
   
   
@@ -154,33 +170,45 @@ Collapsible Side Nav
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-    color: #f1f1f1;
+    color: #4c2c55;
+    border: none;
   }
 
-  .closebtn>i{
-      color: #f1f1f1;
-      font-size: 1em;
-  }
+
   
+  .openbtn {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
   .openbtn, .button {
+    height: 60px;
+    width: 150px;
     font-size: 20px;
     cursor: pointer;
     background-color: #784187;
     color: white;
     padding: 10px 15px;
     border: none;
+    margin: 1%;
+  }
+
+  .button {
+    text-align: left;
   }
 
   i {
-      display: inline;
+      float: left;
   }
 
   .text{
-      float: right;
+      display: inline;
       padding-left: 1%;
+      font-size: 20px;
+      margin-left: 10%;
   }
   
-  .openbtn:hover {
+  .openbtn:hover, .button:hover {
     background-color: #4c2c55;
   }
   
@@ -205,7 +233,7 @@ Collapsible Side Nav
 @media screen and (min-width: 751px) {
 #toggle{ display: none;}
 }
-  /* On smaller screens, where width is less than 700:
+  /* On smaller screens, where width is less than 750:
  -hide the default nav and display the collapsible nav 
  -change margin of text */
 
