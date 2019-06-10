@@ -88,11 +88,7 @@
     {% capture new_heading %}
       <h{{ _hAttrToStrip }}
         {{ include.bodyPrefix }}
-        {% if beforeHeading %}
           {{ anchor }}{{ header }}
-        {% else %}
-          {{ header }}{{ anchor }}
-        {% endif %}
         {{ include.bodySuffix }}
       </h{{ _workspace | last }}
     {% endcapture %}
