@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Generating Reports
+title: Run Reports
 css: ['documents.css']
 category: reports
 ---
