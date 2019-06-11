@@ -1,8 +1,8 @@
 /*--------------
  T2M Colors
- #77C045 - green
+ #7FBA00 - green
  #66a03f - dark green for gradient
- #784187 - purple
+ #68217A - purple
  #4c2c55 - purple hover
 
  Accent colors
@@ -21,11 +21,9 @@
     margin: 2%
 }
 
-#header_wrap {
+.outer {
 
     margin-top: 80px;
-    margin-left: 15%;
-    padding-left: 2%;
 }
 
 body {
@@ -55,9 +53,7 @@ body {
     flex-wrap: wrap;
     -ms-flex-align: center;
     align-items: center;
-    padding: 0.5rem 1rem;
-    background: linear-gradient(to bottom, #77c045 0%, #66a03f 100%);
-    color: #bbe0a2;
+    background-color: #7FBA00;
     font-weight: bold;
     z-index: 99;
     top: 0;
@@ -66,13 +62,13 @@ body {
   }
 
   .navbar a {
-      color: #bbe0a2;
+      color: #fff;
       text-decoration: none; 
       padding: 1em;
   }
 
   .navbar a:hover {
-      color: #fff;
+      text-decoration: underline;
   }
 
 
@@ -93,7 +89,7 @@ a {
     border: 0px;
     background-color: white;
     text-decoration: none;
-    color: #784187;
+    color: #68217A;
     padding: 2%;
     margin: 2% 2%;
     cursor: pointer;
@@ -112,6 +108,24 @@ a {
     font-weight: bold;
 }
 
-.container {
-    text-align: right;
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+footer {
+    position: fixed;
+    z-index: 99;
+    background-color: #eee;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding-top: 10px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
 }
