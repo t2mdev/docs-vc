@@ -64,7 +64,9 @@ body {
   .navbar a:hover {
       text-decoration: underline;
   }
-
+#page_title {
+    color: #7FBA00;
+}
 
 .row {
     text-align: center;

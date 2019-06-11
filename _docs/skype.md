@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Using Skype for Business
+title:  Skype Basics
 css: ['documents.css']
 ---
 

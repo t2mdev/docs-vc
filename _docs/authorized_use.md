@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Other Resources
+title: Authorized Use Policy
 css: ['documents.css']
 ---
 
