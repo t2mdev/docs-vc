@@ -3,8 +3,9 @@ layout: docs
 title: Approved Endpoints
 css: ['documents.css']
 ---
-
-In order to ensure that you receive the best performance from the Cloud Complete service, it is necessary that your organization use approved endpoint devices.
+## About
+  
+  In order to ensure that you receive the best performance from the Cloud Complete service, it is necessary that your organization use approved endpoint devices.
 
 All devices appearing in the list below have been tested and certified as supported endpoints for Cloud Complete customers. For more information on each device, please visit the accompanying link to the manufacturer’s page for device specifications and datasheets. If you would like to place an order, please contact your account representative for assistance.  
 

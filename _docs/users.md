@@ -4,6 +4,8 @@ title: User Management
 css: ['documents.css']
 ---
 
+## Main Page
+
 The Users page is a powerful area of the portal that allows for the administration of individual user accounts: 
 
 The first 25 users in your organization are displayed automatically upon loading the page; for larger organizations, you may user the search bar to locate individual users. Displayed next to each user are three clickable links: Call History, Call Forwarding and Edit User. 
