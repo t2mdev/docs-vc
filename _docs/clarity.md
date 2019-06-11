@@ -4,6 +4,8 @@ title: Clarity Connect
 css: ['documents.css']
 ---
 
+## What is Clarity Connect?
+
 Clarity Connect is an advanced call routing / queuing software that integrates directly with your existing Skype for Business (SfB) software. As an Agent, inbound calls are pushed to your SfB client and can answered like any other call. However, there are some important call-handling rules that you must be aware of while operating as a Clarity agent.  
  
 ## Presence 
