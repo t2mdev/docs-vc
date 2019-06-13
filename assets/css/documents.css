@@ -5,7 +5,7 @@
  #4c2c55 - purple hover
 
  Accent colors
- #f5f5f5 - offwhite, footer/sidenav bg
+ #f5f5f5 - offwhite, footer.sidenav bg
  #212529 - main text
  -------------*/
 
@@ -26,11 +26,48 @@ body {
   background-color: #fff;
 }
 
+  /*---------------------------------------------------------------------
+  Top Navigation
+  ---------------------------------------------------------------------*/
+  .navbar li {
+    display: inline;
+    list-style: none;
+    margin: 0;
+}
+
+
+.navbar {
+  height: 55px;
+  width: 100%;
+  position: fixed;
+  background-color: #7FBA00;
+  font-weight: bold;
+  z-index: 99;
+  top: 0;
+  border-radius: 0px;
+}
+#page_title {
+  line-height: 50px;
+}
+.navbar a, #page_title a {
+    color: #fff;
+    text-decoration: none; 
+    padding-left: 1em;
+    line-height: 15px;
+}
+
+.navbar a:hover, #page_title a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+  /*---------------------------------------------------------------------
+  Main Content
+  ---------------------------------------------------------------------*/
 
 .outer {
-  
-    margin: 80px 0px 70px 160px;
-    padding-left: 2%;
+    margin-left: 20%;
+    margin-top: 80px;
     padding-right: 10%;
 }
 
@@ -63,45 +100,6 @@ ol, ul {
 
 
 
-
-  /*---------------------------------------------------------------------
-  Top Navigation
-  ---------------------------------------------------------------------*/
-  .navbar li {
-      display: inline;
-      list-style: none;
-      margin: 0;
-  }
-  
-
-  .navbar {
-    height: 55px;
-    width: 100%;
-    position: fixed;
-    background-color: #7FBA00;
-    font-weight: bold;
-    z-index: 99;
-    top: 0;
-    border-radius: 0px;
-  }
-  #page_title {
-    line-height: 50px;
-  }
-  .navbar a {
-      color: #fff;
-      text-decoration: none; 
-      padding-left: 1em;
-      line-height: 15px;
-  }
-
-  .navbar a:hover {
-      text-decoration: underline;
-  }
-
-  #header_wrap {
-    margin-top: 80px;
-  }
-
   /*------------------------------------------------------------------
   Fixed Side Nav
   ------------------------------------------------------------------*/
@@ -109,7 +107,7 @@ ol, ul {
 
 .sidenav {
     height: 90%;
-    width: 160px;
+    width: 20%;
     position: fixed;
     z-index: 1;
     top: 50px;
@@ -118,12 +116,10 @@ ol, ul {
     padding-top: 2%;
     background-color: #fff;
     overflow-y: scroll;
-    list-style: none;
     
 }
 
 .sidenav>ul {
-  margin-left: -5%;
   list-style: none;
 }
 
@@ -213,7 +209,7 @@ Collapsible Menu Toggle Buttons
     color: white;
     padding: 10px 15px;
     border: none;
-    margin: 50px 1% 1%;
+    margin: 2% 1% 1%;
   }
 
   .button {
@@ -251,13 +247,12 @@ Collapsible Menu Toggle Buttons
 Footer
 --------------------------------------------------------------*/
 footer {
-    position: fixed;
-    z-index: 99;
+  
     background-color: #eee;
     height: 45px;
-    width: 100%;
+    width: 80%;
     bottom: 0;
-    left: 0;
+    margin-left: 20%;
     padding-top: 10px;
 }
 
@@ -271,16 +266,14 @@ footer {
 
 /* Hide the collapsible nav bar */
 
-@media screen and (min-width: 751px) {
+@media screen and (min-width: 801px) {
 #toggle{ display: none;}
 }
   /* On smaller screens, where width is less than 750:
  -hide the default nav and display the collapsible nav 
  -change margin of text */
 
-  @media screen and (max-width: 750px) {
-    .toggle_nav {padding-top: 15px;}
-    .toggle_nav a {font-size: 18px;}
+  @media screen and (max-width: 800px) {
     .outer { margin-left: 5%;}
     #full {display: none;}
 

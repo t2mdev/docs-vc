@@ -4,7 +4,8 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/bootstrap/bootstrap.css">
+        <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
         <title>T2M Training</title>
         <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
@@ -14,17 +15,45 @@
         <body>
             
             <!-- HEADER -->
-              <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+              <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <a class="navbar-brand" href="/">CloudWorks Training </a>
       <a id="page_title" href="#top">/   CloudWorks</a>
 
   </nav>
 
     
-            <!--SIDE BAR NAVIGATION-->
+
+
+
             
-            <div id="toggle">
-            <div id="mySidebar" class="toggle_nav">
+    
+            
+            <!--SIDE BAR NAVIGATION-->
+             
+                        <section id="full" class="sidenav">            
+                            
+                        <ul>
+                            <li>
+                                <a href="/" style="font-weight:bold;">Return Home</a>
+                            </li>
+                        </ul>
+                            <ul>
+  <li><a href="#initial-login">Initial LogIn</a></li>
+  <li><a href="#accessing-the-portal">Accessing the Portal</a></li>
+  <li><a href="#navigating-the-dashboard">Navigating the Dashboard</a></li>
+</ul>
+                            
+
+                        </section> 
+                                    
+
+
+                    <!-- MAIN CONTENT -->
+                    <div class="outer">
+                        
+                        <h1>CloudWorks</h1>
+                        <div id="toggle">
+                                <div id="mySidebar" class="toggle_nav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
     <div class="menu_links">
       <a href="#top" style= "font-weight:bold;">Return to Top</a>
@@ -52,37 +81,9 @@
       document.getElementById("main").style.marginLeft= "0";
     }
     </script>
-            </div>
-
-            
-            <div id="full">
-            
-
-<div class="sidenav">
-
-    <ul>
-        <li>
-            <a href="/" style="font-weight:bold;">Return Home</a>
-        </li>
-
-        <ul>
-  <li><a href="#initial-login">Initial LogIn</a></li>
-  <li><a href="#accessing-the-portal">Accessing the Portal</a></li>
-  <li><a href="#navigating-the-dashboard">Navigating the Dashboard</a></li>
-</ul>
-        
-    </ul>
-  </div>
-            </div>
-
-
-            
-    
-            <!-- MAIN CONTENT -->
-            <div id="main_content_wrap" class="outer">
-                <h1>CloudWorks</h1>
-                <section id="main_content" class="inner">
-                    <h2 id="initial-login">
+                        </div>
+                        <section id="main_content" class="inner">
+                            <h2 id="initial-login">
         
            <a href="#initial-login"></a>Initial LogIn
         
@@ -133,9 +134,16 @@ Recent Activity displays the most recent calls to or from your organization, alo
 Past Incidents displays a history of recent service interruptions (or, more commonly, a lack thereof).</p>
 
 <p>Finally, the left sidebar provides easy navigation to the rest of the areas of the portal. Clicking on the downward arrow next to your organization name (in the top-left corner of the page) also provides the same navigation options. This can be useful to know, as the sidebar will disappear as you travel deeper into reporting pages within the portal.</p>
-                </section>
-            </div>
+                        </section>
+                    </div>
+    
+            
 
+
+            
+       
+                    
+                
     
             <!-- FOOTER  -->
             <footer>

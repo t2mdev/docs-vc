@@ -6,7 +6,8 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{'/assets/bootstrap/bootstrap.css'| append: site.github.build_revision | relative_url}}">
+        <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/documents.css?v=' | append: site.github.build_revision | relative_url }}"> 
         <title>T2M Training</title>
         <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
@@ -18,28 +19,39 @@
             <!-- HEADER -->
             {% include navigation.html %}
     
-            <!--SIDE BAR NAVIGATION-->
-            
-            <div id="toggle">
-            {% include collapse_sidenav.html %}
-            </div>
 
-            
-            <div id="full">
-            {% include side_nav.html %}
-            </div>
 
 
             
     
-            <!-- MAIN CONTENT -->
-            <div id="main_content_wrap" class="outer">
-                <h1>{{ page.title}}</h1>
-                <section id="main_content" class="inner">
-                    {% include anchor_headings.html html=content %}
-                </section>
-            </div>
+            
+            <!--SIDE BAR NAVIGATION-->
+             
+                        <section id="full" class="sidenav">            
+                            {% include side_nav.html %}
+                        </section> 
+                                    
 
+
+                    <!-- MAIN CONTENT -->
+                    <div class="outer">
+                        
+                        <h1>{{ page.title}}</h1>
+                        <div id="toggle">
+                                {% include collapse_sidenav.html %}
+                        </div>
+                        <section id="main_content" class="inner">
+                            {% include anchor_headings.html html=content %}
+                        </section>
+                    </div>
+    
+            
+
+
+            
+       
+                    
+                
     
             <!-- FOOTER  -->
             <footer>

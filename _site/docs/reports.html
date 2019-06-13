@@ -4,7 +4,8 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/bootstrap/bootstrap.css">
+        <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
         <title>T2M Training</title>
         <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
@@ -14,17 +15,54 @@
         <body>
             
             <!-- HEADER -->
-              <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+              <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <a class="navbar-brand" href="/">CloudWorks Training </a>
       <a id="page_title" href="#top">/   Run Reports</a>
 
   </nav>
 
     
-            <!--SIDE BAR NAVIGATION-->
+
+
+
             
-            <div id="toggle">
-            <div id="mySidebar" class="toggle_nav">
+    
+            
+            <!--SIDE BAR NAVIGATION-->
+             
+                        <section id="full" class="sidenav">            
+                            
+                        <ul>
+                            <li>
+                                <a href="/" style="font-weight:bold;">Return Home</a>
+                            </li>
+                        </ul>
+                            <ul>
+  <li><a href="#summary-report">Summary Report</a></li>
+  <li><a href="#currently-logged-in-users">Currently Logged in Users</a></li>
+  <li><a href="#ip-device-report">IP Device Report</a></li>
+  <li><a href="#login-report">Login Report</a></li>
+  <li><a href="#enabled-users">Enabled Users</a></li>
+  <li><a href="#locked-accounts">Locked Accounts</a></li>
+  <li><a href="#user-ratings-report">User Ratings Report</a></li>
+  <li><a href="#call-quality-report">Call Quality Report</a></li>
+  <li><a href="#conference-summary">Conference Summary</a></li>
+  <li><a href="#pstn-conference-minutes">PSTN Conference Minutes</a></li>
+  <li><a href="#pstn-summary-report">PSTN Summary Report</a></li>
+  <li><a href="#call-details">Call Details</a></li>
+</ul>
+                            
+
+                        </section> 
+                                    
+
+
+                    <!-- MAIN CONTENT -->
+                    <div class="outer">
+                        
+                        <h1>Run Reports</h1>
+                        <div id="toggle">
+                                <div id="mySidebar" class="toggle_nav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
     <div class="menu_links">
       <a href="#top" style= "font-weight:bold;">Return to Top</a>
@@ -61,46 +99,9 @@
       document.getElementById("main").style.marginLeft= "0";
     }
     </script>
-            </div>
-
-            
-            <div id="full">
-            
-
-<div class="sidenav">
-
-    <ul>
-        <li>
-            <a href="/" style="font-weight:bold;">Return Home</a>
-        </li>
-
-        <ul>
-  <li><a href="#summary-report">Summary Report</a></li>
-  <li><a href="#currently-logged-in-users">Currently Logged in Users</a></li>
-  <li><a href="#ip-device-report">IP Device Report</a></li>
-  <li><a href="#login-report">Login Report</a></li>
-  <li><a href="#enabled-users">Enabled Users</a></li>
-  <li><a href="#locked-accounts">Locked Accounts</a></li>
-  <li><a href="#user-ratings-report">User Ratings Report</a></li>
-  <li><a href="#call-quality-report">Call Quality Report</a></li>
-  <li><a href="#conference-summary">Conference Summary</a></li>
-  <li><a href="#pstn-conference-minutes">PSTN Conference Minutes</a></li>
-  <li><a href="#pstn-summary-report">PSTN Summary Report</a></li>
-  <li><a href="#call-details">Call Details</a></li>
-</ul>
-        
-    </ul>
-  </div>
-            </div>
-
-
-            
-    
-            <!-- MAIN CONTENT -->
-            <div id="main_content_wrap" class="outer">
-                <h1>Run Reports</h1>
-                <section id="main_content" class="inner">
-                    <h2 id="summary-report">
+                        </div>
+                        <section id="main_content" class="inner">
+                            <h2 id="summary-report">
         
            <a href="#summary-report"></a>Summary Report
         
@@ -254,9 +255,16 @@ Jitter Avg (Max) displays the average jitter for the duration of the call, as we
 <p>Network MOS Avg (Min) displays the MOS (Mean Opinion Score) calculated for the call, which is a traditional telephony metric for measuring call quality. A peer-to-peer VoIP call has a maximum score of 4.3, whereas a PSTN call has a maximum score of 3.71. Lower than 3.0 indicates poor call quality.</p>
 
 <p>Degradation Avg displays the average amount of degradation events that occurred during the call.  The degradation directly impacts the overall call quality score.</p>
-                </section>
-            </div>
+                        </section>
+                    </div>
+    
+            
 
+
+            
+       
+                    
+                
     
             <!-- FOOTER  -->
             <footer>
