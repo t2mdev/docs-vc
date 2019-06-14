@@ -7,11 +7,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
         <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+        <link rel="stylesheet" href="{{'/assets/bootstrap/bootstrap.css'| append: site.github.build_revision | relative_url}}">
+        <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/home.css?v=' | append: site.github.build_revision | relative_url }}">
         <title>T2M Training</title>
-        <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
+      
     </head>
     
         <body>
@@ -21,23 +21,55 @@
     
             <!-- MAIN CONTENT -->
             <div id="main_content_wrap" class="outer">
+                <div class="container">
                     <div class="row">
 
-                        <button class="button" onclick="window.location='docs/cloud.html';"><i class="fas fa-cloud"></i><br><div class="text">CloudWorks</div></button>
-                        <button class="button" onclick="window.location='docs/skype.html';"><i class="fab fa-skype"></i><br><div class="text">Skype Basics</div></button>
-                        <button class="button" onclick="window.location='docs/skype_broadcast.html';"><i class="fas fa-satellite-dish"></i><br><div class="text">Skype Broadcast</div></button>
-                        <button class="button" onclick="window.location='docs/clarity.html';"><i class="fas fa-headset"></i><br><div class="text">Clarity Connect</div></button>
-                        <button class="button" onclick="window.location='docs/products.html';"><i class="fas fa-laptop"></i><br><div class="text">Compatible Products</div></button>
-                        
-                   
+                        <div class="card bg-light mb-3" style="max-width: 24rem;">
+                            <div class="card-header">
+                                <i class="fas fa-cloud"></i><br>CloudWorks</div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="docs/cloud.html">How to Use CloudWorks</a></li>
+                                <li class="list-group-item"><a href="#">Product Description</a></li>
+                                <li class="list-group-item"><a href="#">Item 3</a></li>
+                            </ul>
+                        </div><!-- Closing Card  -->
 
-                        <button class="button" onclick="window.location='docs/users.html';"><i class="far fa-address-book"></i><br><div class="text">User Management</div></button>
-                        <button class="button" onclick="window.location='docs/reports.html';"><i class="fas fa-chart-line"></i><br><div class="text">Run Reports</div></button>
-                        <button class="button" onclick="window.location='docs/phones.html';"><i class="fas fa-phone"></i><br><div class="text">Phone Basics</div></button> 
-                        <button class="button" onclick="window.location='docs/setup.html';"><i class="fas fa-tools"></i><br><div class="text">Device Setup</div></button>
-                        <button class="button" onclick="window.location='docs/resources.html';"><i class="far fa-question-circle"></i><div class="text">Other Resources</div></button>
-                    </div>
-            </div>
+                        <div class="card bg-light mb-3" style="max-width: 24rem;">
+                            <div class="card-header">
+                                <i class="fab fa-skype"></i><br>Skype</div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="docs/skype.html">Skype Basics</a></li>
+                                <li class="list-group-item"><a href="docs/skype_broadcast.html">Skype Broadcast</a></li>
+                                <li class="list-group-item"><a href="docs/clarity.html">Clarity Connect</a></li>
+                                <li class="list-group-item"><a href="docs/management.html">Managing users and Devices</a></li>
+                                <li class="list-group-item"><a href="docs/phones.html">Phone Basics</a></li>
+                                <li class="list-group-item"><a href="docs/setup.html">Device SetUp</a></li>
+                                <li class="list-group-item"><a href="docs/products.html">Compatible Products</a></li>
+                            </ul>
+                        </div><!-- Closing Card  -->
+
+                        <div class="card bg-light mb-3" style="max-width: 24rem;">
+                            <div class="card-header">
+                                    <i class="fas fa-chart-line"></i><br>Reports</div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="docs/reports.html">How to Run Reports</a></li>
+                                <li class="list-group-item"><a href="docs/reports.html">How to Run Reports</a></li>
+                                <li class="list-group-item"><a href="docs/reports.html">How to Run Reports</a></li>
+                            </ul>
+                        </div><!-- Closing Card  -->
+
+                        <div class="card bg-light mb-3" style="max-width: 24rem;">
+                            <div class="card-header">
+                                <i class="far fa-question-circle"></i><br>Other Resources</div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="docs/resources.html">Helpful Links</a></li>
+                                <li class="list-group-item"><a href="docs/authorized_use.html">Authorized Use</a></li>
+                                <li class="list-group-item"><a href="docs/cookies.html">Cookie Policy</a></li>
+                            </ul>
+                        </div><!-- Closing Card  -->
+                    </div><!-- Closing Row  -->
+                </div><!-- Closing Container  -->
+            </div><!-- Closing Main Content Wrapper  -->
     
             <!-- FOOTER  -->
             <footer>

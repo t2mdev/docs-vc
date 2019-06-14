@@ -4,7 +4,8 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/bootstrap/bootstrap.css">
+        <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
         <title>T2M Training</title>
         <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
@@ -14,17 +15,47 @@
         <body>
             
             <!-- HEADER -->
-              <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+              <nav class="navbar navbar-expand-md navbar-dark fixed-top">
       <a class="navbar-brand" href="/">CloudWorks Training </a>
       <a id="page_title" href="#top">/   Clarity Connect</a>
 
   </nav>
 
     
-            <!--SIDE BAR NAVIGATION-->
+
+
+
             
-            <div id="toggle">
-            <div id="mySidebar" class="toggle_nav">
+    
+            
+            <!--SIDE BAR NAVIGATION-->
+             
+                        <section id="full" class="sidenav">            
+                            
+                        <ul>
+                            <li>
+                                <a href="/" style="font-weight:bold;">Return Home</a>
+                            </li>
+                        </ul>
+                            <ul>
+  <li><a href="#what-is-clarity-connect">What is Clarity Connect?</a></li>
+  <li><a href="#presence">Presence</a></li>
+  <li><a href="#answering-a-call">Answering a Call</a></li>
+  <li><a href="#agent-console">Agent Console</a></li>
+  <li><a href="#call-handling">Call Handling</a></li>
+</ul>
+                            
+
+                        </section> 
+                                    
+
+
+                    <!-- MAIN CONTENT -->
+                    <div class="outer">
+                        
+                        <h1>Clarity Connect</h1>
+                        <div id="toggle">
+                                <div id="mySidebar" class="toggle_nav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
     <div class="menu_links">
       <a href="#top" style= "font-weight:bold;">Return to Top</a>
@@ -54,39 +85,9 @@
       document.getElementById("main").style.marginLeft= "0";
     }
     </script>
-            </div>
-
-            
-            <div id="full">
-            
-
-<div class="sidenav">
-
-    <ul>
-        <li>
-            <a href="/" style="font-weight:bold;">Return Home</a>
-        </li>
-
-        <ul>
-  <li><a href="#what-is-clarity-connect">What is Clarity Connect?</a></li>
-  <li><a href="#presence">Presence</a></li>
-  <li><a href="#answering-a-call">Answering a Call</a></li>
-  <li><a href="#agent-console">Agent Console</a></li>
-  <li><a href="#call-handling">Call Handling</a></li>
-</ul>
-        
-    </ul>
-  </div>
-            </div>
-
-
-            
-    
-            <!-- MAIN CONTENT -->
-            <div id="main_content_wrap" class="outer">
-                <h1>Clarity Connect</h1>
-                <section id="main_content" class="inner">
-                    <h2 id="what-is-clarity-connect">
+                        </div>
+                        <section id="main_content" class="inner">
+                            <h2 id="what-is-clarity-connect">
         
            <a href="#what-is-clarity-connect"></a>What is Clarity Connect?
         
@@ -185,9 +186,16 @@ A metrics bar displays several statistics in the lower view of the Agent Console
 <br /><strong># Queued</strong> indicates how many calls are waiting in queues for which you are skilled. 
 <br /><strong>Available Agents</strong> indicates how many agents are currently available to take calls in queues for which you are skilled. 
 <br /><strong>Your # Handled</strong> indicates how many calls you have handled that day</p>
-                </section>
-            </div>
+                        </section>
+                    </div>
+    
+            
 
+
+            
+       
+                    
+                
     
             <!-- FOOTER  -->
             <footer>

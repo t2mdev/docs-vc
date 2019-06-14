@@ -13,11 +13,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
 
 }
 
-.outer, h2, h3, p {
+ h2, h3, p {
     margin: 2%
 }
 
@@ -37,12 +37,6 @@ body {
     background-color: #fff;
   }
 
-  .navbar li {
-      display: inline;
-      list-style: none;
-  }
-  
-
   .navbar {
     height: 55px;
     width: 100%;
@@ -52,21 +46,23 @@ body {
     z-index: 99;
     top: 0;
     border-radius: 0px;
-
   }
-
+  #page_title {
+    line-height: 50px;
+    color: #7FBA00;
+  }
   .navbar a {
       color: #fff;
       text-decoration: none; 
-      padding: 1em;
+      padding-left: 1em;
+      line-height: 15px;
   }
 
   .navbar a:hover {
       text-decoration: underline;
   }
-#page_title {
-    color: #7FBA00;
-}
+
+
 
 .row {
     text-align: center;
@@ -79,28 +75,20 @@ i {
 a {
     text-decoration: none;
     border: none;
-}
-
-.button {
-    border: 0px;
-    background-color: white;
-    text-decoration: none;
     color: #68217A;
-    padding: 2%;
-    margin: 2% 2%;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    
 }
 
-.button:hover{
-    color: #4c2c55;
-    transform: scale(1.1, 1.1);
+a:hover {
+    text-decoration: underline;
+    color: #7FBA00;
 }
 
-.text {
-    font-size: 1em;
-    padding: 5%;
+.card {
+    margin: 0 auto;
+}
+
+.card-header {
+    color: #68217A;
     font-weight: bold;
 }
 
@@ -108,13 +96,13 @@ a {
 Footer
 --------------------------------------------------------------*/
 footer {
-    position: fixed;
     z-index: 99;
     background-color: #eee;
     height: 45px;
     width: 100%;
     bottom: 0;
-    left: 0;
+    left: 20%;
+    margin-top: 5%;
     padding-top: 10px;
 }
 
