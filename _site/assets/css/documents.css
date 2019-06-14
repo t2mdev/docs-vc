@@ -169,6 +169,7 @@ Collapsible Side Nav
     transition: 0.5s;
     padding-top: 60px;
     color: #68217A;
+    margin-top: 50px;
 
   }
 
@@ -187,7 +188,6 @@ Collapsible Side Nav
   }
 
   .menu_links {
-    margin-top: 30px;
     margin-left: -10%;
     list-style: none;
   }
@@ -200,15 +200,15 @@ Collapsible Side Nav
     text-decoration: underline;
   }
   
-  
-  .closebtn {
+  .fa-chevron-left {
+    font-size: 2em;
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
     margin-left: 50px;
     color: #4c2c55;
     border: none;
+    padding-top: 10%;
   }
 
 /*------------------------------------------------------------------
@@ -293,6 +293,7 @@ footer {
     .outer { margin-left: 5%;}
     #full {display: none;}
     .navbar-nav {display: none;}
+    .dropdown-toggle {display:none;}
     footer {margin: 0;
             width: 100%;}
   }
