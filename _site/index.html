@@ -4,32 +4,106 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="/assets/bootstrap/bootstrap.css">
+        <!-- Adding local Bootstrap -->
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+        <!-- Adding local FontAwesome -->
         <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/home.css?v=">
-        <title>T2M Training</title>
-      
+        <!--Adding local jQuery and Javascript-->
+        <script src="/assets/js/jquery-3.4.1.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.js"></script>
+        <!-- Adding Custom CSS -->
+        <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/index.css?v=">
+        <title>T2M Training</title>   
     </head>
     
         <body>
             <!-- HEADER -->
-              <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <a class="navbar-brand" href="/">CloudWorks Training </a>
-      <a id="page_title" href="#top">/   </a>
+            <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <span class="navbar-brand">CloudWorks Training</span>
 
-  </nav>
+        <div class="dropdown">
+          <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            CloudWorks
+          </a>
+                  
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="cloud.html">CloudWorks Introduction</a>
+            <a class="dropdown-item" href="#">Product Description</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div><!--Closing Dropdown-Menu-->
+        </div><!--Closing dropdown-->
 
+        <div class="dropdown">
+            <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Skype
+            </a>
+                    
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="/docs/skype.html">Skype Basics</a>
+              <a class="dropdown-item" href="/docs/skype_broadcast.html">Skype Broadcast</a>
+              <a class="dropdown-item" href="/docs/clarity.html">Clarity Connect</a>
+              <a class="dropdown-item" href="/docs/products.html">Compatible Products</a>
+              <a class="dropdown-item" href="/docs/users.html">User Management</a>
+              <a class="dropdown-item" href="/docs/device_management.html">Device Management</a>
+              <a class="dropdown-item" href="/docs/phones.html">Phone Basics</a>
+              <a class="dropdown-item" href="/docs/setup.html">Phone Setup</a>
+            </div><!--Closing Dropdown-Menu-->
+          </div><!--Closing dropdown-->
+
+        <ul class="navbar-nav mr-auto">
+          <li id="reports" class="nav-item">
+            <a class="nav-link" href="/docs/reports.html">Reports</a>
+          </li>
+          <li id="netsapiens" class="nav-item">
+            <a class="nav-link" href="#">Netsapiens</a>
+          </li>
+          <li id="sd-wan" class="nav-item">
+            <a class="nav-link" href="#">SD-WAN</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <ul class="navbar-nav mr-auto">
+            <li id="other" class="nav-item">
+              <a class="nav-link" href="resources.html" id="Other">Other Resources</a>
+            </li>
+          </ul>
+          <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+        </form>
+    </nav>
+</header>
+
+<script type="text/javascript">
+    function resetNavActive() {
+        $("#skype").removeClass("active");
+        $("#reports").removeClass("active");
+        $("#CloudWorks").removeClass("active");
+        $("#netsapiens").removeClass("active");
+        $("#sd-wan").removeClass("active");
+        $("#other").removeClass("active");
+    }
+    //Highlight Default Page
+    var pathname = window.location.pathname;
+    if (pathname.indexOf("skype") != -1) { $("#skype").addClass("active"); }
+    if (pathname.indexOf("reports") != -1) { $("#reports").addClass("active"); }
+    if (pathname.indexOf("CloudWorks") != -1) { $("#CloudWorks").addClass("active"); }
+    if (pathname.indexOf("netsapiens") != -1) { $("#netsapiens").addClass("active"); }
+    if (pathname.indexOf("sd-wan") != -1) { $("#sd-wan").addClass("active"); }
+    if (pathname.indexOf("other") != -1) { $("#other").addClass("active"); }
+</script>
     
     
             <!-- MAIN CONTENT -->
-            <div id="main_content_wrap" class="outer">
+            <div id="main_content_wrap" class="outer regular">
+                <h1>Popular Links</h1>
                 <div class="container">
                     <div class="row">
 
-                        <div class="card bg-light mb-3" style="max-width: 24rem;">
-                            <div class="card-header">
-                                <i class="fas fa-cloud"></i><br>CloudWorks</div>
+                        <div class="card bg-light mb-3">
+                            <div class="card-header lgHeader">
+                                <i class="fas fa-cloud big"></i><br>CloudWorks
+                            </div><!-- Closing Card Header  -->
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><a href="docs/cloud.html">How to Use CloudWorks</a></li>
                                 <li class="list-group-item"><a href="#">Product Description</a></li>
@@ -37,46 +111,85 @@
                             </ul>
                         </div><!-- Closing Card  -->
 
-                        <div class="card bg-light mb-3" style="max-width: 24rem;">
+                        <div class="card bg-light mb-3">
                             <div class="card-header">
-                                <i class="fab fa-skype"></i><br>Skype</div>
+                                <i class="fab fa-skype"></i><br>Skype
+                            </div><!-- Closing Card Header  -->
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><a href="docs/skype.html">Skype Basics</a></li>
                                 <li class="list-group-item"><a href="docs/skype_broadcast.html">Skype Broadcast</a></li>
                                 <li class="list-group-item"><a href="docs/clarity.html">Clarity Connect</a></li>
-                                <li class="list-group-item"><a href="docs/management.html">Managing users and Devices</a></li>
-                                <li class="list-group-item"><a href="docs/phones.html">Phone Basics</a></li>
-                                <li class="list-group-item"><a href="docs/setup.html">Device SetUp</a></li>
-                                <li class="list-group-item"><a href="docs/products.html">Compatible Products</a></li>
                             </ul>
                         </div><!-- Closing Card  -->
 
-                        <div class="card bg-light mb-3" style="max-width: 24rem;">
+                        <div class="card bg-light mb-3">
                             <div class="card-header">
-                                    <i class="fas fa-chart-line"></i><br>Reports</div>
+                                <i class="fas fa-chart-line"></i><br>Reports
+                            </div><!-- Closing Card Header  -->
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><a href="docs/reports.html">How to Run Reports</a></li>
-                                <li class="list-group-item"><a href="docs/reports.html">How to Run Reports</a></li>
-                                <li class="list-group-item"><a href="docs/reports.html">How to Run Reports</a></li>
+                                <li class="list-group-item"><a href="docs/reports.html#call-details">Call Details</a></li>
+                                <li class="list-group-item"><a href="docs/reports.html#call-quality-report">Call Quality</a></li>
+                                <li class="list-group-item"><a href="docs/reports.html#ip-device-report">IP Devices</a></li>
                             </ul>
                         </div><!-- Closing Card  -->
 
-                        <div class="card bg-light mb-3" style="max-width: 24rem;">
+                    </div><!-- Closing Row  -->
+                    <div class="row">
+
+                        <div class="card bg-light mb-3">
                             <div class="card-header">
-                                <i class="far fa-question-circle"></i><br>Other Resources</div>
+                                <i class="fas fa-globe"></i><br>Netsapiens
+                            </div><!-- Closing Card Header  -->
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="#">Item 1</a></li>
+                                <li class="list-group-item"><a href="#">Item 2</a></li>
+                                <li class="list-group-item"><a href="#">Item 3</a></li>
+                            </ul>
+                        </div><!-- Closing Card  -->
+
+                        <div class="card bg-light mb-3">
+                            <div class="card-header lgHeader">
+                                <i class="fas fa-project-diagram big"></i><br>SD-WAN
+                            </div><!-- Closing Card Header  -->
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><a href="#">Item 1</a></li>
+                                <li class="list-group-item"><a href="#">Item 2</a></li>
+                                <li class="list-group-item"><a href="#">Item 3</a></li>
+                            </ul>
+                        </div><!-- Closing Card  -->
+
+                        <div class="card bg-light mb-3">
+                            <div class="card-header">
+                                <i class="far fa-question-circle"></i><br>Other Resources
+                            </div><!-- Closing Card Header  -->
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item"><a href="docs/resources.html">Helpful Links</a></li>
-                                <li class="list-group-item"><a href="docs/authorized_use.html">Authorized Use</a></li>
-                                <li class="list-group-item"><a href="docs/cookies.html">Cookie Policy</a></li>
+                                <li class="list-group-item"><a href="docs/authorized_use.html">Authorized Use Policy</a></li>
+                                <li class="list-group-item"><a href="docs/cookies.html">Cookies and Privacy Policy</a></li>
                             </ul>
                         </div><!-- Closing Card  -->
-                    </div><!-- Closing Row  -->
+
+                    </div><!-- Closing Row  -->                    
                 </div><!-- Closing Container  -->
+            </div><!-- Closing Main Content Wrapper  -->
+
+            <!-- MOBILE VIEW -->
+            <div id="main_content_wrap" class="outer mobile">
+                <div class="row">
+                    <button class="button" onclick="window.location='docs/cloud.html';"><i class="fas fa-cloud big"></i><br><div class="text">CloudWorks</div></button>
+                    <button class="button" onclick="window.location='docs/skype.html';"><i class="fab fa-skype"></i><br><div class="text">Skype</div></button>
+                    <button class="button" onclick="window.location='docs/reports.html';"><i class="fas fa-chart-line"></i><br><div class="text">Run Reports</div></button>
+                </div><!-- Closing Row  --> 
+                <div class="row">
+                    <button class="button" onclick="window.location='#';"><i class="fas fa-globe"></i><br><div class="text">Netsapiens</div></button>
+                    <button class="button" onclick="window.location='#';"><i class="fas fa-project-diagram big"></i><br><div class="text">SD-WAN</div></button>
+                    <button class="button" onclick="window.location='docs/resources.html';"><i class="far fa-question-circle"></i><div class="text">Other Resources</div></button>
+                </div><!-- Closing Row  --> 
             </div><!-- Closing Main Content Wrapper  -->
     
             <!-- FOOTER  -->
             <footer>
-            <div class="container">
+                <div class="container">
     <div class="float-right">
             <span class="text-muted"> &copy; Time2Market 2019</span>
     </div>
@@ -89,13 +202,8 @@
             </footer>
 
             
-        </body>
-        
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        </body>
     </html>
 </html>
 

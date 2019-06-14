@@ -4,40 +4,105 @@
         <meta charset='utf-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,maximum-scale=2">
-        <link rel="stylesheet" href="/assets/bootstrap/bootstrap.css">
+        <!-- Adding local Bootstrap -->
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.css">
+        <!-- Adding local FontAwesome -->
         <link href="/assets/fontawesome/css/all.css" rel="stylesheet">
+        <!--Adding local jQuery and Javascript-->
+        <script src="/assets/js/jquery-3.4.1.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.bundle.js"></script>
+        <script src="/assets/bootstrap/js/bootstrap.js"></script>
+        <!-- Adding Custom CSS -->
         <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/documents.css?v="> 
         <title>T2M Training</title>
-        <script src="https://kit.fontawesome.com/3ba72403cc.js"></script>
     </head>
-    
-    <div id="main">
+
         <body>
-            
             <!-- HEADER -->
-              <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <a class="navbar-brand" href="/">CloudWorks Training </a>
-      <a id="page_title" href="#top">/   Clarity Connect</a>
+            <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <span class="navbar-brand">CloudWorks Training</span>
 
-  </nav>
+        <div class="dropdown">
+          <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            CloudWorks
+          </a>
+                  
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="cloud.html">CloudWorks Introduction</a>
+            <a class="dropdown-item" href="#">Product Description</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div><!--Closing Dropdown-Menu-->
+        </div><!--Closing dropdown-->
 
-    
+        <div class="dropdown">
+            <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Skype
+            </a>
+                    
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="/docs/skype.html">Skype Basics</a>
+              <a class="dropdown-item" href="/docs/skype_broadcast.html">Skype Broadcast</a>
+              <a class="dropdown-item" href="/docs/clarity.html">Clarity Connect</a>
+              <a class="dropdown-item" href="/docs/products.html">Compatible Products</a>
+              <a class="dropdown-item" href="/docs/users.html">User Management</a>
+              <a class="dropdown-item" href="/docs/device_management.html">Device Management</a>
+              <a class="dropdown-item" href="/docs/phones.html">Phone Basics</a>
+              <a class="dropdown-item" href="/docs/setup.html">Phone Setup</a>
+            </div><!--Closing Dropdown-Menu-->
+          </div><!--Closing dropdown-->
 
+        <ul class="navbar-nav mr-auto">
+          <li id="reports" class="nav-item">
+            <a class="nav-link" href="/docs/reports.html">Reports</a>
+          </li>
+          <li id="netsapiens" class="nav-item">
+            <a class="nav-link" href="#">Netsapiens</a>
+          </li>
+          <li id="sd-wan" class="nav-item">
+            <a class="nav-link" href="#">SD-WAN</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <ul class="navbar-nav mr-auto">
+            <li id="other" class="nav-item">
+              <a class="nav-link" href="resources.html" id="Other">Other Resources</a>
+            </li>
+          </ul>
+          <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+        </form>
+    </nav>
+</header>
 
+<script type="text/javascript">
+    function resetNavActive() {
+        $("#skype").removeClass("active");
+        $("#reports").removeClass("active");
+        $("#CloudWorks").removeClass("active");
+        $("#netsapiens").removeClass("active");
+        $("#sd-wan").removeClass("active");
+        $("#other").removeClass("active");
+    }
+    //Highlight Default Page
+    var pathname = window.location.pathname;
+    if (pathname.indexOf("skype") != -1) { $("#skype").addClass("active"); }
+    if (pathname.indexOf("reports") != -1) { $("#reports").addClass("active"); }
+    if (pathname.indexOf("CloudWorks") != -1) { $("#CloudWorks").addClass("active"); }
+    if (pathname.indexOf("netsapiens") != -1) { $("#netsapiens").addClass("active"); }
+    if (pathname.indexOf("sd-wan") != -1) { $("#sd-wan").addClass("active"); }
+    if (pathname.indexOf("other") != -1) { $("#other").addClass("active"); }
+</script>
 
-            
-    
             
             <!--SIDE BAR NAVIGATION-->
-             
-                        <section id="full" class="sidenav">            
-                            
-                        <ul>
-                            <li>
-                                <a href="/" style="font-weight:bold;">Return Home</a>
-                            </li>
-                        </ul>
-                            <ul>
+            <section id="full" class="sidenav">            
+                
+<ul>
+    <li>
+        <a href="/" style="font-weight:bold;">Return Home</a>
+    </li>
+</ul>
+<ul>
   <li><a href="#what-is-clarity-connect">What is Clarity Connect?</a></li>
   <li><a href="#presence">Presence</a></li>
   <li><a href="#answering-a-call">Answering a Call</a></li>
@@ -46,16 +111,11 @@
 </ul>
                             
 
-                        </section> 
-                                    
-
-
-                    <!-- MAIN CONTENT -->
-                    <div class="outer">
-                        
-                        <h1>Clarity Connect</h1>
-                        <div id="toggle">
-                                <div id="mySidebar" class="toggle_nav">
+            </section> 
+            <div id="main">
+            <div class="outer">
+                <div id="toggle">
+                    <div id="mySidebar" class="toggle_nav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-chevron-left"></i></a>
     <div class="menu_links">
       <a href="#top" style= "font-weight:bold;">Return to Top</a>
@@ -71,7 +131,7 @@
   
   <div id="main_toggle">
     <button class="openbtn" onclick="openNav()">☰ Contents</button> 
-    <button class="button" onclick="window.location='/';"><i class="fas fa-home"></i><div class="text">Home</div></button>
+    <button class="homebtn" onclick="window.location='/';"><i class="fas fa-home"></i><div class="text">Home</div></button>
   </div>
 
   <script>
@@ -84,10 +144,15 @@
       document.getElementById("mySidebar").style.width = "0";
       document.getElementById("main").style.marginLeft= "0";
     }
-    </script>
-                        </div>
-                        <section id="main_content" class="inner">
-                            <h2 id="what-is-clarity-connect">
+  </script>
+                </div>
+            </div>
+
+            <!-- MAIN CONTENT -->
+            <div class="outer">
+                <h1>Clarity Connect</h1>
+                <section id="main_content" class="inner">
+                    <h2 id="what-is-clarity-connect">
         
            <a href="#what-is-clarity-connect"></a>What is Clarity Connect?
         
@@ -186,20 +251,12 @@ A metrics bar displays several statistics in the lower view of the Agent Console
 <br /><strong># Queued</strong> indicates how many calls are waiting in queues for which you are skilled. 
 <br /><strong>Available Agents</strong> indicates how many agents are currently available to take calls in queues for which you are skilled. 
 <br /><strong>Your # Handled</strong> indicates how many calls you have handled that day</p>
-                        </section>
-                    </div>
-    
-            
-
-
-            
-       
-                    
-                
+                </section>
+            </div>
     
             <!-- FOOTER  -->
             <footer>
-            <div class="container">
+                <div class="container">
     <div class="float-right">
             <span class="text-muted"> &copy; Time2Market 2019</span>
     </div>
@@ -211,7 +268,8 @@ A metrics bar displays several statistics in the lower view of the Agent Console
 
             </footer>
             
+        </div>
         </body>
-    </div>
-    </html>
+    
+</html>
 </html>
