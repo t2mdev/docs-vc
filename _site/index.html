@@ -11,7 +11,7 @@
         <!--Adding local jQuery and Javascript-->
         <script src="/assets/js/jquery-3.4.1.js"></script>
         <script src="/assets/bootstrap/js/bootstrap.bundle.js"></script>
-        <script src="/assets/bootstrap/js/bootstrap.js"></script>
+        
         <!-- Adding Custom CSS -->
         <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/index.css?v=">
         <title>T2M Training</title>   
@@ -24,12 +24,12 @@
         <span class="navbar-brand">CloudWorks Training</span>
 
         <div class="dropdown">
-          <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             CloudWorks
           </a>
                   
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="cloud.html">CloudWorks Introduction</a>
+            <a class="dropdown-item" href="/docs/cloud.html">CloudWorks Introduction</a>
             <a class="dropdown-item" href="#">Product Description</a>
             <a class="dropdown-item" href="#">Something else here</a>
           </div><!--Closing Dropdown-Menu-->
@@ -66,7 +66,7 @@
         <form class="form-inline mt-2 mt-md-0">
           <ul class="navbar-nav mr-auto">
             <li id="other" class="nav-item">
-              <a class="nav-link" href="resources.html" id="Other">Other Resources</a>
+              <a class="nav-link" href="/docs/resources.html" id="Other">Other Resources</a>
             </li>
           </ul>
           <!--<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
@@ -174,18 +174,92 @@
             </div><!-- Closing Main Content Wrapper  -->
 
             <!-- MOBILE VIEW -->
-            <div id="main_content_wrap" class="outer mobile">
-                <div class="row">
-                    <button class="button" onclick="window.location='docs/cloud.html';"><i class="fas fa-cloud big"></i><br><div class="text">CloudWorks</div></button>
-                    <button class="button" onclick="window.location='docs/skype.html';"><i class="fab fa-skype"></i><br><div class="text">Skype</div></button>
-                    <button class="button" onclick="window.location='docs/reports.html';"><i class="fas fa-chart-line"></i><br><div class="text">Run Reports</div></button>
-                </div><!-- Closing Row  --> 
-                <div class="row">
-                    <button class="button" onclick="window.location='#';"><i class="fas fa-globe"></i><br><div class="text">Netsapiens</div></button>
-                    <button class="button" onclick="window.location='#';"><i class="fas fa-project-diagram big"></i><br><div class="text">SD-WAN</div></button>
-                    <button class="button" onclick="window.location='docs/resources.html';"><i class="far fa-question-circle"></i><div class="text">Other Resources</div></button>
-                </div><!-- Closing Row  --> 
-            </div><!-- Closing Main Content Wrapper  -->
+            <div id="main_toggle">
+                <div id="main_content_wrap" class="outer mobile">
+                    <div class="row">
+                        <button class="button openCloud" onclick="openCloud()"><i class="fas fa-cloud big"></i><br><div class="text">CloudWorks</div></button>
+                        <button class="button openSkype" onclick="openSkype()"><i class="fab fa-skype"></i><br><div class="text">Skype</div></button>
+                        <button class="button" onclick="window.location='docs/reports.html';"><i class="fas fa-chart-line"></i><br><div class="text">Run Reports</div></button>
+                    </div><!-- Closing Row  --> 
+                    <div class="row">
+                        <button class="button" onclick="window.location='#';"><i class="fas fa-globe"></i><br><div class="text">Netsapiens</div></button>
+                        <button class="button" onclick="window.location='#';"><i class="fas fa-project-diagram big"></i><br><div class="text">SD-WAN</div></button>
+                        <button class="button" onclick="openOther()"><i class="far fa-question-circle"></i><div class="text">Other Resources</div></button>
+                    </div><!-- Closing Row  --> 
+                </div><!-- Closing Main Content Wrapper  -->
+            </div><!--Closing main_toggle-->
+
+            <!--MOBILE MENU-->
+            <!--CLOUDWORKS-->
+            <div id="cloudSidebar" class="toggle_nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeCloud()"><i class="fas fa-chevron-left"></i></a>
+                <div class="menu_links">
+                    <a href="/docs/cloud.html">CloudWorks Introduction</a>
+                    <a href="#">Product Description</a>
+                    <a href="#">Something else here</a>
+                </div><!--Closing Cloud Menu Links-->
+            </div><!--Closing cloudSidebar-->
+
+                  <script>
+                    function openCloud() {
+                      document.getElementById("cloudSidebar").style.width = "250px";
+                      document.getElementById("main").style.marginLeft = "250px";
+                    }
+                    
+                    function closeCloud() {
+                      document.getElementById("cloudSidebar").style.width = "0";
+                      document.getElementById("main").style.marginLeft= "0";
+                    }
+                  </script>
+
+            <!--SKYPE-->
+            <div id="skypeSidebar" class="toggle_nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeSkype()"><i class="fas fa-chevron-left"></i></a>
+                <div class="menu_links">
+                    <a href="/docs/skype.html">Skype Basics</a>
+                    <a href="/docs/skype_broadcast.html">Skype Broadcast</a>
+                    <a href="/docs/clarity.html">Clarity Connect</a>
+                    <a href="/docs/products.html">Compatible Products</a>
+                    <a href="/docs/users.html">User Management</a>
+                    <a href="/docs/device_management.html">Device Management</a>
+                    <a href="/docs/phones.html">Phone Basics</a>
+                    <a href="/docs/setup.html">Phone Setup</a>
+                </div><!--Closing Menu Links-->
+            </div><!--Closing skypeSidebar-->
+                    
+                      <script>
+                        function openSkype() {
+                          document.getElementById("skypeSidebar").style.width = "250px";
+                          document.getElementById("main").style.marginLeft = "250px";
+                        }
+                        
+                        function closeSkype() {
+                          document.getElementById("skypeSidebar").style.width = "0";
+                          document.getElementById("main").style.marginLeft= "0";
+                        }
+                      </script>
+
+            <!--OTHER RESOURCES-->
+            <div id="otherSidebar" class="toggle_nav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeOther()"><i class="fas fa-chevron-left"></i></a>
+                <div class="menu_links">
+                    <a href="docs/resources.html">Helpful Links</a>
+                    <a href="docs/authorized_use.html">Authorized Use Policy</a>
+                    <a href="docs/cookies.html">Cookies and Privacy Policy</a>
+                </div><!--Closing Menu Links-->
+            </div><!--Closing otherSidebar-->
+                    
+                      <script>
+                        function openOther() {
+                          document.getElementById("otherSidebar").style.width = "250px";
+                          document.getElementById("main").style.marginLeft = "250px";
+                        }
+                        
+                        function closeOther() {
+                          document.getElementById("otherSidebar").style.width = "0";
+                          document.getElementById("main").style.marginLeft= "0";
+                        }
+                      </script>
     
             <!-- FOOTER  -->
             <footer>
