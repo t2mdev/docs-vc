@@ -10,9 +10,6 @@ css: ['documents.css']
 
 <a href="https://support.office.com/en-us/article/video-complete-meeting-solution-518a36ec-8b7d-4c12-a77a-f4a2c9f47e45?ui=en-US&rs=en-US&ad=US" target="_blank">Using Skype for Business Meetings</a>
 
-<a href="authorized_use.html">Cloud Complete Authorized Use Policy</a>
-
-<a href="cookies.html">Cookies and Privacy Policy</a>
 
 ## Skype for Business: A Quick Introduction
 

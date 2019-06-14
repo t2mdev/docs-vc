@@ -1,0 +1,194 @@
+/*--------------
+ T2M Colors
+ #7FBA00 - green
+ #68217A - purple
+ #4c2c55 - purple hover
+
+ Accent colors
+ #f5f5f5 - offwhite, footer/sidenav bg
+ #212529 - main text
+ -------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+  }
+
+/*---------------------------------------------------------------------
+  Top Navigation
+---------------------------------------------------------------------*/
+
+.navbar {
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    background-color: #7FBA00;
+    font-weight: bold;
+    z-index: 99;
+    top: 0;
+    border-radius: 0px;
+}
+
+.dropdown-toggle {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none; 
+      padding-left: 1em;
+      line-height: 50px;
+
+}
+
+.dropdown-toggle:hover {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+.dropdown-toggle:focus {
+    color: rgba(255, 255, 255, 1);
+}
+
+.dropdown-item {
+    color: #68217A;
+}
+
+.dropdown-item:hover {
+    color: #4c2c55;
+    text-decoration: underline;
+}
+
+.nav-link{
+    line-height: 50px;
+}
+
+
+
+
+/*---------------------------------------------------------------------
+  Main Content
+---------------------------------------------------------------------*/
+
+h1 {
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
+
+.outer {
+
+    margin-top: 80px;
+}
+
+.row {
+    text-align: center;
+}
+    
+i {
+    font-size: 9em;
+}
+
+.big {
+    font-size: 7em;
+}
+
+.lgHeader {
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+}
+
+li>a {
+    text-decoration: none;
+    border: none;
+    color: #68217A;
+}
+
+li>a:hover {
+    text-decoration: underline;
+    color: #7FBA00;
+}
+
+.card {
+    margin: 0 auto;
+    width: 25%;
+}
+
+.card-header {
+    color: #68217A;
+    font-weight: bold;
+}
+
+.button {
+
+    width: 25%;
+    text-decoration: none;
+    color: #68217A;
+    padding: 2%;
+    margin: 2% auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: whitesmoke;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25em;
+    overflow: hidden;
+    
+}
+
+.button>i{
+    font-size: 4em;
+}
+
+.button:hover{
+    color: #4c2c55;
+    transform: scale(1.1, 1.1);
+}
+
+.text {
+    font-size: .75em;
+    padding: 5%;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
+footer {
+    
+    background-color: #eee;
+    height: 45px;
+    width: 100%;
+    margin-top: 5%;
+    padding-top: 10px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+/* Hide the collapsible nav bar */
+
+@media screen and (min-width: 801px) {
+    .mobile{ display: none;}
+    }
+      /* On smaller screens, where width is less than 800:
+     -hide the default nav and display the collapsible nav 
+     -change margin of text */
+    
+@media screen and (max-width: 800px) {
+        .regular{ display: none;}
+        .navbar-nav {display: none;}
+        .row {margin: 0 auto;}
+        footer {bottom: 0;}
+      }

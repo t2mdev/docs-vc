@@ -29,36 +29,52 @@ body {
   /*---------------------------------------------------------------------
   Top Navigation
   ---------------------------------------------------------------------*/
-  .navbar li {
-    display: inline;
-    list-style: none;
-    margin: 0;
+
+  .navbar {
+    height: 55px;
+    width: 100%;
+    position: fixed;
+    background-color: #7FBA00;
+    font-weight: bold;
+    z-index: 99;
+    top: 0;
+    border-radius: 0px;
 }
 
 
-.navbar {
-  height: 55px;
-  width: 100%;
-  position: fixed;
-  background-color: #7FBA00;
-  font-weight: bold;
-  z-index: 99;
-  top: 0;
-  border-radius: 0px;
-}
-#page_title {
-  line-height: 50px;
-}
-.navbar a, #page_title a {
-    color: #fff;
-    text-decoration: none; 
-    padding-left: 1em;
-    line-height: 15px;
+
+.dropdown-toggle {
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none; 
+      padding-left: 1em;
+      line-height: 50px;
+      margin-right: 4%;
 }
 
-.navbar a:hover, #page_title a:hover {
+.dropdown-toggle:hover {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+.dropdown-toggle:focus {
+    color: rgba(255, 255, 255, 1);
+}
+
+.dropdown-item {
+    color: #68217A;
+}
+
+.dropdown-item:hover {
+    color: #4c2c55;
     text-decoration: underline;
-    color: #fff;
+}
+
+.nav-link{
+    line-height: 50px;
+}
+
+.navbar ul {
+  margin: 0;
 }
 
   /*---------------------------------------------------------------------
@@ -80,12 +96,12 @@ h2 {
   padding-top: 60px;
 }
 
-a {
+p>a {
     text-decoration: none;
     color: #68217A;
 }
 
-a:hover {
+p>a:hover {
     text-decoration: underline;
     color: #7FBA00;
 }
@@ -200,7 +216,7 @@ Collapsible Menu Toggle Buttons
 ------------------------------------------------------------------*/
   
 
-  .openbtn, .button {
+  .openbtn, .homebtn {
     height: 60px;
     width: 150px;
     font-size: 20px;
@@ -212,7 +228,7 @@ Collapsible Menu Toggle Buttons
     margin: 2% 1% 1%;
   }
 
-  .button {
+  .homebtn {
     text-align: left;
   }
 
@@ -227,7 +243,7 @@ Collapsible Menu Toggle Buttons
       margin-left: 10%;
   }
   
-  .openbtn:hover, .button:hover {
+  .openbtn:hover, .homebtn:hover {
     background-color: #7FBA00;
   }
   
@@ -269,12 +285,14 @@ footer {
 @media screen and (min-width: 801px) {
 #toggle{ display: none;}
 }
-  /* On smaller screens, where width is less than 750:
+  /* On smaller screens, where width is less than 800:
  -hide the default nav and display the collapsible nav 
  -change margin of text */
 
   @media screen and (max-width: 800px) {
     .outer { margin-left: 5%;}
     #full {display: none;}
-
+    .navbar-nav {display: none;}
+    footer {margin: 0;
+            width: 100%;}
   }
