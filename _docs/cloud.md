@@ -4,7 +4,7 @@ title: CloudWorks
 css: ['documents.css']
 ---
 
-## Initial LogIn ##
+## Initial Log-In to Skype for Business ##
 
 When migrating from Office 365 to Time2Market’s Cloud Complete service, it is important to understand the process that your users will go through for their first login. The purpose of this document is to walk you through the steps your end users will need to take for their initial login to the client.
 
@@ -16,7 +16,10 @@ When migrating from Office 365 to Time2Market’s Cloud Complete service, it is 
 
 ## Accessing the Portal ##
 
-The portal is located at: https://portal.t2mhosted.com You will see a login screen that looks like this: 
+The portal is located at: https://my.t2mhosted.com You will see a login screen that looks like this: 
+
+![Cloud Portal](/assets/images/cloud.1.png){:width="600px"}
+
 Login using your Skype for Business credentials (same username and password). 
 
 ## Navigating the Dashboard ##
