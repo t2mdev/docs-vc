@@ -88,4 +88,4 @@ Prerequisites: This is for customers who do not have an Active Directory sync op
 3. This will open the New User dialog.  Enter all of the necessary information for the user. 
 4. Select the appropriate configurations for the user(s): 
 
-Select the option for the user based on their location and 911 policy.  Click Create User when completed.  If there are additional settings you need to modify, simply edit the user.
+Select the option for the user based on their location and 911 policy.  Click Create User when completed.  If there are additional settings you need to modify, simply edit the user..
