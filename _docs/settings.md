@@ -70,22 +70,48 @@ The **Team Members** and **Delegate Members** tabs allow you to view the user’
 
 ## Enabling a New User
 
-Prerequisites: If you do have an on premise Active Directory environment, ensure that the user has been added to the appropriate sync group. If you do not have an on premise Active Directory environment (or are unsure what that means) see the Create a New User below.
+Prerequisites: If you do have an on premise Active Directory environment, ensure that the user has been added to the appropriate sync group. If you do not have an on premise Active Directory environment (or are unsure what that means), ensure that you have contacted T2M Support to create the user’s cloud account.
 
-1. Navigate to the Users tab by logging into the portal and clicking on "Active Users" on the left sidebar: 
-2. Within the Users tab, click on "Enable User" at the top right of the screen:
-3. This will open the New User dialog. The user you wish to enable should be listed here.  (If the user you wish to add does not appear, please double check that the prerequisite step earlier in this section was completed) Check the box next to the user(s) that you wish to enable and click Move to Next Step.  
+1. Navigate to the Users tab by logging into the portal and clicking on “Users” on the left sidebar: 
+2. Within the Users tab, click on “Enable Users” at the top right of the screen:
+3. This will open the New User dialog. The user you wish to enable should be listed here:(If the user you wish to add does not appear, please double check that the prerequisite step earlier in this section was completed) Check the box next to the user(s) that you wish to enable and click Move to Next Step.  
 4. Select the appropriate configurations for the user(s): 
 
-Select the option for the user based on their location and 911 policy.  Click Create User when completed.  If there are additional settings you need to modify, simply edit the user.
+If your user will be using PSTN features, you will need to check the Enterprise Voice box. Select the appropriate Dial Plan, Client Policy, and External Access Policy for your user and then click Enable Users to save.  
 
-## Creating a New User
+Your user is now enabled for Cloud Complete! 
 
-Prerequisites: This is for customers who do not have an Active Directory sync option.
+## Delegating Portal Administration Powers
 
-1. Navigate to the Users tab by logging into the portal and clicking on "Active Users" on the left sidebar: 
-2. Within the Users tab, click on "Add User" at the top right of the screen:
-3. This will open the New User dialog.  Enter all of the necessary information for the user. 
-4. Select the appropriate configurations for the user(s): 
+The Cloud Complete Portal offers the ability to delegate administrative powers to different users in your organization in an extremely granular way. Using the Users & Roles menu, you can add users to five different administrative roles with different levels of control: 
 
-Select the option for the user based on their location and 911 policy.  Click Create User when completed.  If there are additional settings you need to modify, simply edit the user.
+If none of the preset roles suit your exact need, you can create your own custom organization roles as well. 
+ 
+To access the Users & Roles menu, hover your mouse over your name in the top-corner of the Portal and click Users & Roles: 
+
+### Users Tab
+
+Once you click Users & Roles, you will be brought to the Users tab. This shows your existing administrative users and the roles they own:  
+
+From here you may Add, Edit and Delete users to the preset roles available. Clicking Edit in a user’s row will allow you to change their access level as well as view their current powers in the portal: 
+
+To Add a user to a preset role, click Add User. You will be brought to this page: 
+
+ 
+Simply begin typing the name of any user in your organization in the Name Search box – they will populate automatically. Please note that users must already be active with Enterprise Voice in order to be selected as an administrative user. Select the appropriate preset from the Permissions drop-down and click Add User to save.  
+
+### Roles Tab
+
+Click on “Roles” as in the screenshot below to navigate to the Roles tab, where you may set up custom roles for your organization: 
+
+This will bring you to the Roles page, which displays a readout of the permissions granted to each of the preset roles, as well as a listing of your organization’s existing custom roles. Click Add Role to add a new custom role: 
+
+The Add Role page allows you to mix and match Read and Edit capabilities for a variety of Portal functions: 
+
+**Manage Users & Roles** allows the user to add, edit, and delete users and roles – this is the highest level of access, and we recommend that it be reserved for global administrators.  
+**Billing Menu** allows the user access to the billing menu for license information.  
+**Support Menu** allows the user to submit support requests to the Time2Market Cloud support team.  
+ 
+**Users, Common Area, Meeting Rooms and Call Groups** – if Read is checked, the administrator will be able to view existing information regarding these users / rooms / groups. If Edit is checked, the administrator will be able to reset passwords, change user phone numbers, edit call group membership, etc.  
+ 
+To create a custom role, select the options you would like available, enter a Role Name and click Save Changes & Add Role. Remember to add user to the role group once the role is created.  
