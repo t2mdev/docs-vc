@@ -18,7 +18,7 @@ When selecting a user from the table of existing users, you will see the followi
 
 > **Important:** By default, editing is disabled when you open up any user account.  You must select the Enable Editing button.  Once you do this, you can modify the settings for the user.  When you make a change, that change takes effect immediately.  **There is no save button required.**
 
-![Cloud Portal](/assets/images/user.2.png)
+![Cloud Portal](/assets/images/user.2.png){:width="750px"}
 
 ### Voice
 
@@ -70,16 +70,22 @@ The **Team Members** and **Delegate Members** tabs allow you to view the user’
 
 Prerequisites: If you do have an on premise Active Directory environment, ensure that the user has been added to the appropriate sync group. If you do not have an on premise Active Directory environment (or are unsure what that means) see the Create a New User below.
 
+![Cloud Portal](/assets/images/user.4.png){:width="750px"}
+
 1. Navigate to the Users tab by logging into the portal and clicking on "Active Users" on the left sidebar: 
 2. Within the Users tab, click on "Enable User" at the top right of the screen:
 3. This will open the New User dialog.  Select the user from the drop down that you wish to enable.
+
 > If the user you wish to add does not appear, please double check that the prerequisite step earlier in this section was completed.) Check the box next to the user(s) that you wish to enable and click Move to Next Step.  
 4. Select the appropriate configurations for the user(s):
+
 > Select the option for the user based on their location and 911 policy.  Click Create User when completed.  If there are additional settings you need to modify, simply edit the user.
 
 ## Creating a New User
 
 Prerequisites: This is for customers who do not have an Active Directory sync option.
+
+![Cloud Portal](/assets/images/user.3.png){:width="750px"}
 
 1. Navigate to the Users tab by logging into the portal and clicking on "Active Users" on the left sidebar: 
 2. Within the Users tab, click on "Add User" at the top right of the screen:
