@@ -16,7 +16,7 @@ The users page allows you to see all users enabled for Skype for Business.  At t
 
 When selecting a user from the table of existing users, you will see the following page appear.
 
-> Important: By default, editing is disabled when you open up any user account.  You must select the Enable Editing button.  Once you do this, you can modify the settings for the user.  When you make a change, that change takes effect immediately.  **There is no save button required.**
+> **Important:** By default, editing is disabled when you open up any user account.  You must select the Enable Editing button.  Once you do this, you can modify the settings for the user.  When you make a change, that change takes effect immediately.  **There is no save button required.**
 
 ![Cloud Portal](/assets/images/user.2.png)
 
@@ -70,21 +70,20 @@ The **Team Members** and **Delegate Members** tabs allow you to view the user’
 
 Prerequisites: If you do have an on premise Active Directory environment, ensure that the user has been added to the appropriate sync group. If you do not have an on premise Active Directory environment (or are unsure what that means) see the Create a New User below.
 
-- [ ] Navigate to the Users tab by logging into the portal and clicking on "Active Users" on the left sidebar: 
-- [ ] Within the Users tab, click on "Enable User" at the top right of the screen:
-- [ ] This will open the New User dialog.  Select the user from the drop down that you wish to enable.
+[ ] Navigate to the Users tab by logging into the portal and clicking on "Active Users" on the left sidebar: 
+[ ] Within the Users tab, click on "Enable User" at the top right of the screen:
+[ ] This will open the New User dialog.  Select the user from the drop down that you wish to enable.
 > If the user you wish to add does not appear, please double check that the prerequisite step earlier in this section was completed.) Check the box next to the user(s) that you wish to enable and click Move to Next Step.  
-- [ ] Select the appropriate configurations for the user(s):
-
-... Select the option for the user based on their location and 911 policy.  Click Create User when completed.  If there are additional settings you need to modify, simply edit the user.
+[ ] Select the appropriate configurations for the user(s):
+ > Select the option for the user based on their location and 911 policy.  Click Create User when completed.  If there are additional settings you need to modify, simply edit the user.
 
 ## Creating a New User
 
 Prerequisites: This is for customers who do not have an Active Directory sync option.
 
-- [ ] Navigate to the Users tab by logging into the portal and clicking on "Active Users" on the left sidebar: 
-- [ ] Within the Users tab, click on "Add User" at the top right of the screen:
-- [ ] This will open the New User dialog.  Enter all of the necessary information for the user. 
-- [ ] Select the appropriate configurations for the user(s): 
+[ ] Navigate to the Users tab by logging into the portal and clicking on "Active Users" on the left sidebar: 
+[ ] Within the Users tab, click on "Add User" at the top right of the screen:
+[ ] This will open the New User dialog.  Enter all of the necessary information for the user. 
+[ ] Select the appropriate configurations for the user(s): 
 
 Select the option for the user based on their location and 911 policy.  Click Create User when completed.  If there are additional settings you need to modify, simply edit the user..
