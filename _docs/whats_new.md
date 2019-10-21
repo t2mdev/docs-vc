@@ -4,6 +4,28 @@ title: What's New
 css: ['documents.css']
 ---
 
+## October 2019 ##
+
+The October 2019 Update comes with several new features to make using the T2M Cloud service event easier.
+
+1. New Reports
+- The Last Login report will show you all of the users licensed and the last time they logged into the service.  Making it easier to determine employees who left the company but were not disabled.
+2. User Updates
+- Call forwarding for users now shows Team Members and Delegate Members.
+3. Advanced Number Management
+- When assigning users (common area, meeting rooms, etc.) a phone number, you can now see the location description.
+- From Support, you can now modify the location description for number ranges to make it easier to assign numbers.  For example, assign a number range the name Common Area phones so when assigning new numbers you know what it was designed for.
+- From Support, you can now request and manage your PSTN Forwards for unassigned numbers, call groups and meeting rooms.
+4. User Options
+- Edit always.  Want to be able to skip the step of enabling editing for each user.  Under settings you can now decide to enable editing by default.
+
+## September 2019 ##
+
+The September 2019 Update comes with several new features to make using the T2M Cloud service event easier.
+
+1. New Reports
+- User Activity Report can be used to monitor outbound PSTN calls for a subset of users.  Perfect for sales orgnaizations trying to watch outbound dialing metrics.
+
 ## July 2019 ##
 
 The July 2019 Update comes with a complete rewrite of the T2M Cloud Complete portal for faster access, easier security options and more flexibility to add the features you want to help control your T2M Cloud Apps.  In addition to a completely new user interface that is easy and faster to use.  Make sure to see the [Accessing the Portal](https://docs.t2mhosted.com/docs/cloud.html#accessing-the-portal) for more details.

@@ -40,4 +40,5 @@ To delete a contact, click the trash can in the top left corner by the Enable Ed
 You can toggle between managing contacts and managing directories. You can create different directories to organize your contacts even further. A contact can be assigned to as many directories as you wish, or none at all. On this page you can add a new directory, edit an existing directory, or delete a directory. (Note: deleting a directory will NOT delete your contacts that are assigned to that directory)
   
   ![Cloud Portal](/assets/images/phonebook.7.png){:width="750px"}
+
   ![Cloud Portal](/assets/images/phonebook.9.png){:width="750px"}
