@@ -41,4 +41,4 @@ You can toggle between managing contacts and managing directories. You can creat
   
   ![Cloud Portal](/assets/images/phonebook.7.png){:width="750px"}
 
-  ![Cloud Portal](/assets/images/phonebook.9.png){:width="750px"}
+  ![Cloud Portal](/assets/images/phonebook.9.PNG){:width="750px"}
