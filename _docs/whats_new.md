@@ -4,6 +4,17 @@ title: What's New
 css: ['documents.css']
 ---
 
+## November 2019 ##
+
+The November 2019 Update comes with several new features to make your T2M Portal Experience more secure.
+
+1. New O365 Login Option
+- Customers can not choose to use native Office 365 Login to the T2M Portal.  This will allow customers who currently use MFA or other two-factor authentication options to login to the T2M Portal.  Contact the T2M Support for more details on how to enable.
+2. New PhoneBook Application
+- Need a centralized dialer for your contact center agents?  The T2M PhoneBook allows users to manage contacts where all others can easily access them.  When your workstation is setup you can even Click-2-Call directly from Skype for Business or Teams.
+3. Provisioning Tools
+- Do you currently use Poly VVX phones for your deployment?  The new provisioning service allows you to easily manage all of your phones from a central location.
+
 ## October 2019 ##
 
 The October 2019 Update comes with several new features to make using the T2M Cloud service event easier.
