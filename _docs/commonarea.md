@@ -40,9 +40,7 @@ The device pin is used to log in a common area device.  You must configure a pin
 
 ### Call History
 
-Call History will bring you to a personalized Call Detail Record page for the common area device, including some basic info on their account details: 
-
-Under General Information on the left, you will find the device SIP Address, the License Requirements of their account (dependent upon their active features), and whether PSTN Voice is enabled. (PSTN Voice describes whether the common area device account can place calls to traditional phone numbers). To the right you will see the common area device last 10 calls (conferences excluded). Double-clicking on any of these calls will bring you to the in-depth Call Detail page for that call, described more thoroughly in a later section.
+Call History will bring you to a personalized Call Detail Record page for the common area device, including some basic info on their account details.  Double-clicking on any of these calls will bring you to the in-depth Call Detail page for that call, described more thoroughly in a later section.
 
 ## Creating a New Device
 
