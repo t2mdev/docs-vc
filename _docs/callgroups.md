@@ -1,12 +1,12 @@
 ---
 layout: docs
-title: Common Area Management
+title: Call Group Management
 css: ['documents.css']
 ---
 
 ## Main Page
 
-The Common Area page is a powerful area of the portal that allows for the administration of all common area devices: 
+The Call Groups Management allows you to manage all aspects of your Skype for Business Call Groups.: 
 
 ![Cloud Portal](/assets/images/common.1.png){:width="750px"}
 
