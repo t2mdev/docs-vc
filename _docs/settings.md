@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: User Management
+title: Settings
 css: ['documents.css']
 ---
 
