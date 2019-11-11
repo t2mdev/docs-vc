@@ -4,114 +4,64 @@ title: User Management
 css: ['documents.css']
 ---
 
-## Main Page
+## Settings Page
 
-The Users page is a powerful area of the portal that allows for the administration of individual user accounts: 
+The settings page is broken into two sections, Personal and Company-Wide based on the permissions assigned to you.
 
-![Cloud Portal](/assets/images/user.1.png){:width="750px"}
+## Personal Settings
 
-Here you will see all of the users for your organization.  At the top of each column is the ability to filter rows based on a specific search criteria.  When selecting a user, a fly-out window will appear from the right side of the screen.  This will include the ability to modify properties, see call history and modify call forwarding.
+### Preferences 
 
-## Modify Existing User
+The preference page allows you to set several different personal options.
 
-When clicking on a user, you will see the following page appear.
+Timezone: Set the default time zone for all reports and information in the portal.
 
-!Important: By default, editing is disabled when you open up any user account.  You must select the Enable Editing button.  Once you do this, you can modify the settings for the user.  When you make a change, that change takes effect immediately.  There is no save button required.
+Portal Tour: Enable or disable the initial welcome tour.
 
-![Cloud Portal](/assets/images/user.2.png)
+Enable Editing By Default: Choose if editing is enabled by default for all users.  This overrides the Editing Mode default for Users, Meeting Rooms, etc.
 
-### Voice
+![Cloud Portal](/assets/images/settings.1.png){:width="750px"}
 
-**Enterprise Voice** must be checked in order for the user to have access to PSTN features. If unchecked, the user will not be able to communicate with traditional phone users. 
- 
-**Line URI** is the assigned phone number and extension for the user. Clicking on this dropdown box will display a list of all available unassigned numbers that can be assigned to the user.  
- 
-**Private Line URI** is a secondary, private line for the user that will ignore all delegate and team-ring rules otherwise established for the user’s main line. It is not necessary to assign a private line.  
+### API
 
-## Policies
+The API page allows you to create an API Key that can be used to export data from the T2M Portal.  API Keys are individual keys and tied to your account.  Do not ever share your API Key with another user.  You can view the [API Documentation](http://api.t2mhosted.com/views/) for more information.
 
-**911 Policy** is extremely important – this determines how outgoing 911 calls from the user are routed. For organizations with one office, there will only be one 911 policy – however, organizations with multiple locations (or even multiple floors within a single building) must ensure that users have the proper 911 policy attached.  
+![Cloud Portal](/assets/images/settings.2.png){:width="750px"}
 
-**Routing Policy** is for organizations with mulitple routing options.  If your organization only has a single policy the option will be grayed out.
+### Export Data
 
-**Dial Plan** is for organizations with mulitple and advanced dial plans.  If your organization only has a single policy the option will be grayed out.
+The Export data page allows you to export information from the T2M Portal.  This information can also be obtained via the API.
 
-**Conference Policy** is for organizations with mulitple conferencing policies.  If your organization only has a single policy the option will be grayed out.
+![Cloud Portal](/assets/images/settings.3.png){:width="750px"}
 
-**Client Policy** is the policy that applies to the user’s Skype for Business client.
+## Company Wide Settings
 
-**External Access Policy** controls if the user is able to communicate with federated partners or Skype Consumer clients 
+### Contacts
 
-### User PIN
+The Primary Contacts page allows you to specify who your contacts are for your organization.  There are five possible options:
 
-The User PIN tab allows you to set a PIN that serves two purposes, described in the screenshot below (and on the tab itself within the portal): 
+Billing: The primary billing contact.
 
-User PIN is not a necessary setting for most Skype for Business setups. In fact, it only serves two purposes – and if your organization does not use PIN Authentication for your phones, and you anticipate every conference call containing at least one Skype for Business user present, you do not need to worry about setting a User PIN for any user. 
+Technical: The primary technical contact.
 
-### Call History
+Invoice: The e-mail address(es) to send invoices to.
 
-Call History will bring you to a personalized Call Detail Record page for the user, including some basic info on their account details: 
+Certificate: The e-mail address(es) to contact with regards to any certificate authority requests.
 
-Under General Information on the left, you will find the user’s SIP Address, the License Requirements of their account (dependent upon their active features), and whether PSTN Voice is enabled. (PSTN Voice describes whether the user account can place calls to traditional phone numbers). To the right you will see the user’s last 10 calls (conferences excluded). Double-clicking on any of these calls will bring you to the in-depth Call Detail page for that call, described more thoroughly in a later section.
+Day 2: The users who are the primary Day 2, After Hours and Escalation Users.
 
-### Forwarding
+![Cloud Portal](/assets/images/settings.4.png){:width="750px"}
 
-Call Forwarding allows you to view and edit the Call Forwarding settings for any user in your organization. When you first click the Call Forwarding link in a user’s row, you will be brought to the following setting screen displaying their current settings: 
+### Security
 
-From this page you can alter the user’s call forwarding settings.
+**Users** lists all of the users who are allowed to login to the T2M Portal.  These users can be disabled by selecting them.  Additionally, you can change the role for the user.
 
-**Incoming Calls** can be set to either forward calls to or simultaneously ring 1) another Skype for Business user or 2) a telephone number. Calls can also be forwarded directly to Voicemail.  
+To allow a new user to access the T2M Portal, then click on the "Add Security User" option.  Enter the name of who should be able to login and their role they should be assigned.
 
-**Unanswered Calls** can be set to go to Voicemail, another Skype for Business user, or a telephone number in anywhere from 5 to 60 seconds (in 5 second increments).  
+**Roles** are all of the potential types of roles that are available to your organization.  There are four built-in roles and you can create an unlimited number of roles for your organization.
 
-Once you change a setting, a Save button will appear. Once clicked, these changes will be reflected in the user’s client immediately.  
+To crate a new role, click on the "Add Security Role" option.  Enter the name of the role.  Once the role has been created, click on the role to modify the permissions.
 
-The **Team Members** and **Delegate Members** tabs allow you to view the user’s team and delegate settings. At this time, technical limitations prevent remotely changing delegate relationships through the portal.  
+![Cloud Portal](/assets/images/settings.5.png){:width="750px"}
 
-## Enabling a New User
-
-Prerequisites: If you do have an on premise Active Directory environment, ensure that the user has been added to the appropriate sync group. If you do not have an on premise Active Directory environment (or are unsure what that means), ensure that you have contacted T2M Support to create the user’s cloud account.
-
-1. Navigate to the Users tab by logging into the portal and clicking on “Users” on the left sidebar: 
-2. Within the Users tab, click on “Enable Users” at the top right of the screen:
-3. This will open the New User dialog. The user you wish to enable should be listed here:(If the user you wish to add does not appear, please double check that the prerequisite step earlier in this section was completed) Check the box next to the user(s) that you wish to enable and click Move to Next Step.  
-4. Select the appropriate configurations for the user(s): 
-
-If your user will be using PSTN features, you will need to check the Enterprise Voice box. Select the appropriate Dial Plan, Client Policy, and External Access Policy for your user and then click Enable Users to save.  
-
-Your user is now enabled for Cloud Complete! 
-
-## Delegating Portal Administration Powers
-
-The Cloud Complete Portal offers the ability to delegate administrative powers to different users in your organization in an extremely granular way. Using the Users & Roles menu, you can add users to five different administrative roles with different levels of control: 
-
-If none of the preset roles suit your exact need, you can create your own custom organization roles as well. 
- 
-To access the Users & Roles menu, hover your mouse over your name in the top-corner of the Portal and click Users & Roles: 
-
-### Users Tab
-
-Once you click Users & Roles, you will be brought to the Users tab. This shows your existing administrative users and the roles they own:  
-
-From here you may Add, Edit and Delete users to the preset roles available. Clicking Edit in a user’s row will allow you to change their access level as well as view their current powers in the portal: 
-
-To Add a user to a preset role, click Add User. You will be brought to this page: 
-
- 
-Simply begin typing the name of any user in your organization in the Name Search box – they will populate automatically. Please note that users must already be active with Enterprise Voice in order to be selected as an administrative user. Select the appropriate preset from the Permissions drop-down and click Add User to save.  
-
-### Roles Tab
-
-Click on “Roles” as in the screenshot below to navigate to the Roles tab, where you may set up custom roles for your organization: 
-
-This will bring you to the Roles page, which displays a readout of the permissions granted to each of the preset roles, as well as a listing of your organization’s existing custom roles. Click Add Role to add a new custom role: 
-
-The Add Role page allows you to mix and match Read and Edit capabilities for a variety of Portal functions: 
-
-**Manage Users & Roles** allows the user to add, edit, and delete users and roles – this is the highest level of access, and we recommend that it be reserved for global administrators.  
-**Billing Menu** allows the user access to the billing menu for license information.  
-**Support Menu** allows the user to submit support requests to the Time2Market Cloud support team.  
- 
-**Users, Common Area, Meeting Rooms and Call Groups** – if Read is checked, the administrator will be able to view existing information regarding these users / rooms / groups. If Edit is checked, the administrator will be able to reset passwords, change user phone numbers, edit call group membership, etc.  
- 
-To create a custom role, select the options you would like available, enter a Role Name and click Save Changes & Add Role. Remember to add user to the role group once the role is created.  
+You cannot modify any built-in roles.  Custom roles are labled within the table.

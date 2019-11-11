@@ -23,15 +23,15 @@ When selecting “Create New Contact”, a flyover will appear that allows you t
 
 Selecting a contacts name will create a flyover that displays all contact details. By default, it first appears in view only mode. The “Enable Edit” button on the top left will give you the ability to make any changes necessary. 
 
- ![Cloud Portal](/assets/images/phonebook.3.png)
+ ![Cloud Portal](/assets/images/phonebook.3.png){:width="750px"}
 
 Most changes are saved immediately. The two exceptions are adding a new secondary number and assigning to another directory- these will require you to click the corresponding buttons to add.  
 
-![Cloud Portal](/assets/images/phonebook.4.png)
+![Cloud Portal](/assets/images/phonebook.4.png){:width="750px"}
 
 To delete a contact, click the trash can in the top left corner by the Enable Editing button. You will be prompted to confirm the delete before the contact is permanently removed. 
 
-![Cloud Portal](/assets/images/phonebook.5.png)
+![Cloud Portal](/assets/images/phonebook.5.png){:width="750px"}
 
 ## Manage Directories
 
