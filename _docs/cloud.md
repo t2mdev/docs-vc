@@ -18,7 +18,7 @@ When migrating from Office 365 to Time2Market’s Cloud Complete service, it is 
 
 The portal is located at: https://my.t2mhosted.com You will see a login screen that looks similiar to below: 
 
-![Cloud Portal](/assets/images/cloud.1.png){:width="750px"}
+![Cloud Portal](/assets/images/cloud.1.png){:width="850px"}
 
 Login using your Skype for Business credentials (same username and password). 
 
@@ -26,11 +26,11 @@ Login using your Skype for Business credentials (same username and password).
 
 Upon logging in, you will be brought to the Dashboard page of the portal as seen below: 
 
-![Cloud Portal](/assets/images/cloud.2.png){:width="750px"}
+![Cloud Portal](/assets/images/cloud.2.png){:width="850px"}
 
 The Dashboard provides a broad overview of your organization’s cloud services in a few distinct sections.  At the top of the page is the Application Bar.  Here you can find the application you are currently logged into.  The menu in the upper left corner allows you are access all of the applications you have access to.
  
-![Cloud Portal](/assets/images/cloud.3.png){:width="750px"}
+![Cloud Portal](/assets/images/cloud.3.png){:width="850px"}
 
 The menu to the left side displays all of the available features within the currently selected application.  The menu will highlight the actively selected page.
 

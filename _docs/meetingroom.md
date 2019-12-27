@@ -8,7 +8,7 @@ css: ['documents.css']
 
 The Meeting Room page is a powerful area of the portal that allows for the administration of individual meeting room devices: 
 
-![Cloud Portal](/assets/images/meeting.1.png){:width="750px"}
+![Cloud Portal](/assets/images/meeting.1.png){:width="850px"}
 
 The meeting room page allows you to see all devices enabled for Skype for Business.  At the top of each column is the ability to filter rows based on a specific search criteria.  When selecting a meeting room, a fly-out window will appear from the right side of the screen.  This will include the ability to modify properties and see call history.
 
@@ -18,7 +18,7 @@ When selecting a meeting room from the table of existing list, you will see the 
 
 > **Important:** By default, editing is disabled when you open up any account.  You must select the Enable Editing button.  Once you do this, you can modify the settings for the account.  When you make a change, that change takes effect immediately.  **There is no save button required.**
 
-![Cloud Portal](/assets/images/meeting.2.png){:width="750px"}
+![Cloud Portal](/assets/images/meeting.2.png){:width="850px"}
 
 ### Voice
 
@@ -56,7 +56,7 @@ Under General Information on the left, you will find the room's SIP Address, the
 
 Prerequisites: If you do have an on premise Active Directory environment, ensure that the account has been added to the appropriate sync group. If you do not have an on premise Active Directory environment (or are unsure what that means) see the Create a New Meeting Room below.  If you do not have an on premises Active Directory environment please contact support to assist.
 
-![Cloud Portal](/assets/images/meeting.3.png){:width="750px"}
+![Cloud Portal](/assets/images/meeting.3.png){:width="850px"}
 
 1. Navigate to the Meeting Room tab by logging into the portal and clicking on "Meeting Rooms" on the left sidebar: 
 2. Within the Meeting Room tab, click on "Enable Meeting Room" at the top of the screen:

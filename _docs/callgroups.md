@@ -8,7 +8,7 @@ css: ['documents.css']
 
 The Call Groups Management allows you to manage all aspects of your Skype for Business Call Groups.: 
 
-![Cloud Portal](/assets/images/callgroups.1.png){:width="750px"}
+![Cloud Portal](/assets/images/callgroups.1.png){:width="850px"}
 
 The call groups page allows you to see all call group devices that are enabled for Skype for Business.  At the top of each column is the ability to filter rows based on a specific search criteria.  When selecting a call group device, a fly-out window will appear from the right side of the screen.  This will include the ability to modify properties and see call history.
 
@@ -18,7 +18,7 @@ When selecting a device from the table of existing call groups, you will see the
 
 > **Important:** By default, editing is disabled when you open up any account.  You must select the Enable Editing button.  Once you do this, you can modify the settings for the account.  When you make a change, that change takes effect immediately.  **There is no save button required.**
 
-![Cloud Portal](/assets/images/callgroups.2.png){:width="750px"}
+![Cloud Portal](/assets/images/callgroups.2.png){:width="850px"}
 
 ### Members
 
@@ -42,7 +42,7 @@ Call History will bring you to a personalized Call Detail Record page for the ca
 
 ## Creating a New Call Group
 
-![Cloud Portal](/assets/images/callgroups.3.png){:width="750px"}
+![Cloud Portal](/assets/images/callgroups.3.png){:width="850px"}
 
 1. Navigate to the Call Groups page by logging into the portal and clicking on "Call Groups" on the left sidebar: 
 2. Within the Call Group page, click on "Add Call Group" at the top of the screen:

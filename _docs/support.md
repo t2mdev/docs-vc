@@ -12,7 +12,7 @@ The support page is broken into three sections: announcments, contact us & help 
 
 The announcements area will show any upcoming and past announcements regarding your T2M service.  This may include known outages, upcoming maintainance and new features.
 
-![Cloud Portal](/assets/images/support.1.png){:width="750px"}
+![Cloud Portal](/assets/images/support.1.png){:width="850px"}
 
 ## Contact Us & Help 
 
@@ -20,13 +20,13 @@ The announcements area will show any upcoming and past announcements regarding y
 
 Use the Create Ticket page to submit a ticket to your T2M Support Engineers.  Based on the priority selected during the creation of your ticket determines the priority of work.
 
-![Cloud Portal](/assets/images/support.2.png){:width="750px"}
+![Cloud Portal](/assets/images/support.2.png){:width="850px"}
 
 ### Portal Feedback
 
 Have you found a bug in the portal?  Or is there a feature you simply need to have within the T2M Portal.  Let us know.  Nearly every new feature added to the portal exists to make your job easier.  If you want us to get more information or update you when this change has been made, make sure to check the box to allow us to contact you.
 
-![Cloud Portal](/assets/images/support.3.png){:width="750px"}
+![Cloud Portal](/assets/images/support.3.png){:width="850px"}
 
 ## Number Management
 

@@ -20,19 +20,19 @@ Portal Tour: Enable or disable the initial welcome tour.
 
 Enable Editing By Default: Choose if editing is enabled by default for all users.  This overrides the Editing Mode default for Users, Meeting Rooms, etc.
 
-![Cloud Portal](/assets/images/settings.1.png){:width="750px"}
+![Cloud Portal](/assets/images/settings.1.png){:width="850px"}
 
 ### API
 
 The API page allows you to create an API Key that can be used to export data from the T2M Portal.  API Keys are individual keys and tied to your account.  Do not ever share your API Key with another user.  You can view the [API Documentation](http://api.t2mhosted.com/views/) for more information.
 
-![Cloud Portal](/assets/images/settings.2.png){:width="750px"}
+![Cloud Portal](/assets/images/settings.2.png){:width="850px"}
 
 ### Export Data
 
 The Export data page allows you to export information from the T2M Portal.  This information can also be obtained via the API.
 
-![Cloud Portal](/assets/images/settings.3.png){:width="750px"}
+![Cloud Portal](/assets/images/settings.3.png){:width="850px"}
 
 ## Company Wide Settings
 
@@ -50,7 +50,7 @@ Invoice: The e-mail address(es) to send invoices to.
 
 Day 2: The users who are the primary Day 2, After Hours and Escalation Users.
 
-![Cloud Portal](/assets/images/settings.4.png){:width="750px"}
+![Cloud Portal](/assets/images/settings.4.png){:width="850px"}
 
 ### Security
 
@@ -62,6 +62,6 @@ To allow a new user to access the T2M Portal, then click on the "Add Security Us
 
 To crate a new role, click on the "Add Security Role" option.  Enter the name of the role.  Once the role has been created, click on the role to modify the permissions.
 
-![Cloud Portal](/assets/images/settings.5.png){:width="750px"}
+![Cloud Portal](/assets/images/settings.5.png){:width="850px"}
 
 You cannot modify any built-in roles.  Custom roles are labled within the table.

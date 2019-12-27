@@ -8,7 +8,7 @@ css: ['documents.css']
 
 The Voicemail Management allows you to manage your AVST Powered voicemail solution with T2M Works: 
 
-![Cloud Portal](/assets/images/voicemail.1.png){:width="750px"}
+![Cloud Portal](/assets/images/voicemail.1.png){:width="850px"}
 
 The voicemail page allows you to see all of the voicemail boxes that have been created for your tenant.  At the top of each column is the ability to filter rows based on a specific search criteria.  When selecting a voicemail box, a fly-out window will appear from the right side of the screen.  This will include the ability to modify properties.
 
@@ -18,7 +18,7 @@ When selecting a mailbox from the table of existing voicemail boxes, you will se
 
 > **Important:** By default, editing is disabled when you open up any account.  You must select the Enable Editing button.  Once you do this, you can modify the settings for the account.  When you make a change, that change takes effect immediately.  **There is no save button required.**
 
-![Cloud Portal](/assets/images/voicemail.2.png){:width="750px"}
+![Cloud Portal](/assets/images/voicemail.2.png){:width="850px"}
 
 ### Overview
 
