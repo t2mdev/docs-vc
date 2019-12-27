@@ -5,9 +5,6 @@ css: ['documents.css']
 category: reports
 ---
 
-
-## Summary Report ##
-
 **Voice+ Report Only**
 
 The Summary Report gives an at-a-glance overview of your organization’s activity on a weekly basis: 
