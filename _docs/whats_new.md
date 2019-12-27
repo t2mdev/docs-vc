@@ -4,6 +4,15 @@ title: What's New
 css: ['documents.css']
 ---
 
+## December 2020 ##
+
+The December 2019 Update comes with several new features to make your T2M Portal Experience more enjoyable.
+
+1. Branding.  Welcome to the T2M Works training site and portal.
+2. New Navigation System
+- The top menu was getting crowded for some customers as T2M Works continues to expand it's development lineup.
+3. Various bug fixes
+
 ## November 2019 ##
 
 The November 2019 Update comes with several new features to make your T2M Portal Experience more secure.
@@ -17,7 +26,7 @@ The November 2019 Update comes with several new features to make your T2M Portal
 
 ## October 2019 ##
 
-The October 2019 Update comes with several new features to make using the T2M Cloud service event easier.
+The October 2019 Update comes with several new features to make using the T2M Works service event easier.
 
 1. New Reports
 - The Last Login report will show you all of the users licensed and the last time they logged into the service.  Making it easier to determine employees who left the company but were not disabled.
@@ -32,14 +41,14 @@ The October 2019 Update comes with several new features to make using the T2M Cl
 
 ## September 2019 ##
 
-The September 2019 Update comes with several new features to make using the T2M Cloud service event easier.
+The September 2019 Update comes with several new features to make using the T2M Works service event easier.
 
 1. New Reports
 - User Activity Report can be used to monitor outbound PSTN calls for a subset of users.  Perfect for sales orgnaizations trying to watch outbound dialing metrics.
 
 ## July 2019 ##
 
-The July 2019 Update comes with a complete rewrite of the T2M Cloud Complete portal for faster access, easier security options and more flexibility to add the features you want to help control your T2M Cloud Apps.  In addition to a completely new user interface that is easy and faster to use.  Make sure to see the [Accessing the Portal](https://docs.t2mhosted.com/docs/cloud.html#accessing-the-portal) for more details.
+The July 2019 Update comes with a complete rewrite of the T2M Works Complete portal for faster access, easier security options and more flexibility to add the features you want to help control your T2M Works Apps.  In addition to a completely new user interface that is easy and faster to use.  Make sure to see the [Accessing the Portal](https://docs.t2mhosted.com/docs/cloud.html#accessing-the-portal) for more details.
 
 1. User Updates
 - When creating a new user from a sync'ed account, SIP Address is now based off of the sync'ed SMTP (e-mail) address and not the UPN.  Administrators can click on the Show Advanced Naming option to override.

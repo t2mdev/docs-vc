@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: T2M Cloud 
+title: T2M Works 
 css: ['documents.css']
 ---
 
@@ -16,7 +16,7 @@ When migrating from Office 365 to Time2Market’s Cloud Complete service, it is 
 
 ## Accessing the Portal ##
 
-The portal is located at: https://my.t2mhosted.com You will see a login screen that looks like this: 
+The portal is located at: https://my.t2mhosted.com You will see a login screen that looks similiar to below: 
 
 ![Cloud Portal](/assets/images/cloud.1.png){:width="750px"}
 
@@ -28,7 +28,7 @@ Upon logging in, you will be brought to the Dashboard page of the portal as seen
 
 ![Cloud Portal](/assets/images/cloud.2.png){:width="750px"}
 
-The Dashboard provides a broad overview of your organization’s cloud services in a few distinct sections.  At the top of the page is the Application Bar.  Here, each application your orgnaization has subscribed to is available.  By default, all users will see Settings and Log Out.
+The Dashboard provides a broad overview of your organization’s cloud services in a few distinct sections.  At the top of the page is the Application Bar.  Here you can find the application you are currently logged into.  The menu in the upper left corner allows you are access all of the applications you have access to.
  
 ![Cloud Portal](/assets/images/cloud.3.png){:width="750px"}
 

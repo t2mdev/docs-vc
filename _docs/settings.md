@@ -38,15 +38,15 @@ The Export data page allows you to export information from the T2M Portal.  This
 
 ### Contacts
 
-The Primary Contacts page allows you to specify who your contacts are for your organization.  There are five possible options:
-
-Billing: The primary billing contact.
+The Primary Contacts page allows you to specify who your contacts are for your organization.  A person must be assigned to each option and you will not be allowed to remove the last member of a particular contact area.
 
 Technical: The primary technical contact.
 
-Invoice: The e-mail address(es) to send invoices to.
-
 Certificate: The e-mail address(es) to contact with regards to any certificate authority requests.
+
+Billing: The primary billing contact.
+
+Invoice: The e-mail address(es) to send invoices to.
 
 Day 2: The users who are the primary Day 2, After Hours and Escalation Users.
 

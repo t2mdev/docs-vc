@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Skype Meeting Broadcast and T2M Cloud
+title: Skype Meeting Broadcast and T2M Works
 css: ['documents.css']
 ---
 
