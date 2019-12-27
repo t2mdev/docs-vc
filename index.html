@@ -86,9 +86,7 @@
                                 <li class="list-group-item"><a href="docs/report_enabledusers.html">Enabled Users Report</a></li>
                                 <li class="list-group-item"><a href="docs/report_audit.html">Audit Report</a></li>
 
-                                <li class="list-group-item"><a href="docs/reports.html#call-details">Call Details</a></li>
-                                <li class="list-group-item"><a href="docs/reports.html#call-quality-report">Call Quality</a></li>
-                                <li class="list-group-item"><a href="docs/reports.html#ip-device-report">IP Devices</a></li>
+                                
                             </ul>
                         </div><!-- Closing Card  -->
 
@@ -128,8 +126,8 @@
                 <div id="main_content_wrap" class="outer mobile">
                     <div class="row">
                         <button class="button openCloud" onclick="openCloud()"><i class="fas fa-cloud big"></i><br><div class="text">T2M Works</div></button>
-                        <button class="button openSkype" onclick="openSkype()"><i class="fab fa-skype"></i><br><div class="text">Skype</div></button>
-                        <button class="button" onclick="window.location='docs/reports.html';"><i class="fas fa-chart-line"></i><br><div class="text">Run Reports</div></button>
+                        <button class="button openSkype" onclick="openSkype()"><i class="fab fa-skype"></i><br><div class="text">Voice+</div></button>
+                        <button class="button" onclick="window.location='docs/reports.html';"><i class="fas fa-chart-line"></i><br><div class="text">Reports</div></button>
                     </div><!-- Closing Row  --> 
                     <div class="row">
                         <button class="button" onclick="window.location='#';" style="display: none;"><i class="fas fa-globe"></i><br><div class="text">Netsapiens</div></button>
@@ -140,7 +138,6 @@
             </div><!--Closing main_toggle-->
 
             <!--MOBILE MENU-->
-            <!--CLOUDWORKS-->
             <div id="cloudSidebar" class="toggle_nav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeCloud()"><i class="fas fa-chevron-left"></i></a>
                 <div class="menu_links">
@@ -150,19 +147,19 @@
                 </div><!--Closing Cloud Menu Links-->
             </div><!--Closing cloudSidebar-->
 
-                  <script>
-                    function openCloud() {
-                      document.getElementById("cloudSidebar").style.width = "250px";
-                      document.getElementById("main").style.marginLeft = "250px";
-                    }
-                    
-                    function closeCloud() {
-                      document.getElementById("cloudSidebar").style.width = "0";
-                      document.getElementById("main").style.marginLeft= "0";
-                    }
-                  </script>
+            <script>
+            function openCloud() {
+                document.getElementById("cloudSidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeCloud() {
+                document.getElementById("cloudSidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
 
-            <!--SKYPE-->
+            <!--VOICE+-->
             <div id="skypeSidebar" class="toggle_nav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeSkype()"><i class="fas fa-chevron-left"></i></a>
                 <div class="menu_links">
@@ -177,17 +174,17 @@
                 </div><!--Closing Menu Links-->
             </div><!--Closing skypeSidebar-->
                     
-                      <script>
-                        function openSkype() {
-                          document.getElementById("skypeSidebar").style.width = "250px";
-                          document.getElementById("main").style.marginLeft = "250px";
-                        }
-                        
-                        function closeSkype() {
-                          document.getElementById("skypeSidebar").style.width = "0";
-                          document.getElementById("main").style.marginLeft= "0";
-                        }
-                      </script>
+            <script>
+            function openSkype() {
+                document.getElementById("skypeSidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeSkype() {
+                document.getElementById("skypeSidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
 
             <!--OTHER RESOURCES-->
             <div id="otherSidebar" class="toggle_nav">
@@ -199,17 +196,17 @@
                 </div><!--Closing Menu Links-->
             </div><!--Closing otherSidebar-->
                     
-                      <script>
-                        function openOther() {
-                          document.getElementById("otherSidebar").style.width = "250px";
-                          document.getElementById("main").style.marginLeft = "250px";
-                        }
-                        
-                        function closeOther() {
-                          document.getElementById("otherSidebar").style.width = "0";
-                          document.getElementById("main").style.marginLeft= "0";
-                        }
-                      </script>
+            <script>
+            function openOther() {
+                document.getElementById("otherSidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+            }
+            
+            function closeOther() {
+                document.getElementById("otherSidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+            }
+            </script>
     
             <!-- FOOTER  -->
             <footer>
