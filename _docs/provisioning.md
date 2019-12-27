@@ -38,7 +38,7 @@ If your organization wants to push the configuration to all phones you should us
 
 ### Manual Configuration
 
-Perfect for testing and smaller deployments, you can manually set the configuration Location information directly in the phone.  By navigating to Settings | Provisioning Server on an individual VVX device you can manually enter the supplied provisioning server information.
+Perfect for testing and smaller deployments, you can manually set the configuration Location information directly in the phone.  By navigating to Settings - Provisioning Server on an individual VVX device you can manually enter the supplied provisioning server information.
 
 ### Configuration Files
 
