@@ -13,4 +13,4 @@ The report will also include the type of client being used and if possible, the 
 
 The report can be exported to Microsoft Excel.
 
-![Cloud Portal](/assets/images/reports.1.png){:width="750px"}
+![Cloud Portal](/assets/images/reports.2.png){:width="750px"}
