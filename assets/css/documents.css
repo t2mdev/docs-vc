@@ -34,7 +34,7 @@ body {
     height: 55px;
     width: 100%;
     position: fixed;
-    background-color: #7FBA00;
+    background-color: #74BF44;
     font-weight: bold;
     z-index: 99;
     top: 0;
@@ -61,11 +61,11 @@ body {
 }
 
 .dropdown-item {
-    color: #68217A;
+    color: #0F417C;
 }
 
 .dropdown-item:hover {
-    color: #4c2c55;
+    color: #0F417C;
     text-decoration: underline;
 }
 
@@ -98,12 +98,12 @@ h2 {
 
 p>a {
     text-decoration: none;
-    color: #68217A;
+    color: #0F417C;
 }
 
 p>a:hover {
     text-decoration: underline;
-    color: #7FBA00;
+    color: #74BF44;
 }
 
 p, h3 {
@@ -142,13 +142,13 @@ ol, ul {
 .sidenav a {
     display: block;
     text-decoration: none;
-    color: #68217A;
+    color: #0F417C;
     padding: 2% 10%;
     border-bottom: 1px solid #d9d9d9;
 }
 
 .sidenav a:hover {
-    color: #7FBA00;
+    color: #74BF44;
     text-decoration: underline;
 }
 
@@ -168,7 +168,7 @@ Collapsible Side Nav
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    color: #68217A;
+    color: #0F417C;
     margin-top: 50px;
 
   }
@@ -178,7 +178,7 @@ Collapsible Side Nav
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 18px;
-    color: #68217A;
+    color: #0F417C;
     display: block;
     
   }
@@ -196,7 +196,7 @@ Collapsible Side Nav
     border-bottom: 1px solid #d9d9d9;
   }
   .menu_links a:hover {
-    color: #7FBA00;
+    color: #74BF44;
     text-decoration: underline;
   }
   
@@ -206,7 +206,7 @@ Collapsible Side Nav
     top: 0;
     right: 25px;
     margin-left: 50px;
-    color: #4c2c55;
+    color: #0F417C;
     border: none;
     padding-top: 10%;
   }
@@ -221,7 +221,7 @@ Collapsible Menu Toggle Buttons
     width: 150px;
     font-size: 20px;
     cursor: pointer;
-    background-color: #68217A;
+    background-color: #0F417C;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -244,7 +244,7 @@ Collapsible Menu Toggle Buttons
   }
   
   .openbtn:hover, .homebtn:hover {
-    background-color: #7FBA00;
+    background-color: #74BF44;
   }
   
   #main_toggle {
