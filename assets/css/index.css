@@ -34,7 +34,7 @@ body {
     height: 55px;
     width: 100%;
     position: fixed;
-    background-color: #7FBA00;
+    background-color: #74BF44;
     font-weight: bold;
     z-index: 99;
     top: 0;
@@ -59,11 +59,11 @@ body {
 }
 
 .dropdown-item {
-    color: #68217A;
+    color: #0F417C;
 }
 
 .dropdown-item:hover {
-    color: #4c2c55;
+    color: #0F417C;
     text-decoration: underline;
 }
 
@@ -108,12 +108,12 @@ i {
 li>a {
     text-decoration: none;
     border: none;
-    color: #68217A;
+    color: #0F417C;
 }
 
 li>a:hover {
     text-decoration: underline;
-    color: #7FBA00;
+    color: #74BF44;
 }
 
 .card {
@@ -122,7 +122,7 @@ li>a:hover {
 }
 
 .card-header {
-    color: #68217A;
+    color: #0F417C;
     font-weight: bold;
 }
 
@@ -130,7 +130,7 @@ li>a:hover {
 
     width: 25%;
     text-decoration: none;
-    color: #68217A;
+    color: #0F417C;
     padding: 2%;
     margin: 2% auto;
     cursor: pointer;
@@ -147,7 +147,7 @@ li>a:hover {
 }
 
 .button:hover{
-    color: #4c2c55;
+    color: #0F417C;
     transform: scale(1.1, 1.1);
 }
 
@@ -173,7 +173,7 @@ Collapsible Side Nav
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-    color: #68217A;
+    color: #0F417C;
     margin-top: 50px;
 
   }
@@ -183,7 +183,7 @@ Collapsible Side Nav
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 18px;
-    color: #68217A;
+    color: #0F417C;
     display: block;
     
   }
@@ -201,7 +201,7 @@ Collapsible Side Nav
     border-bottom: 1px solid #d9d9d9;
   }
   .menu_links a:hover {
-    color: #7FBA00;
+    color: #74BF44;
     text-decoration: underline;
   }
   
