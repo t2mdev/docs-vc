@@ -165,9 +165,9 @@ The following steps are needed to configure Pin Authentication for DHCP/Common A
 
 If your site uses a Cisco Router for DHCP, download the Cisco DHCP Settings file and apply to your configuration.
 
-1.	Download the following two files from the portal. 
-    a.	Windows_DHCP.bat 
-    b.	DHCPConfigScript.bat 
+1.	Download the following two files from the portal.  Rename the DHCPConfigScript.txt to DHCPConfigScript.bat.
+-- [Windows_DHCP.bat](/assets/files/Windows_DHCP.txt) 
+-- [DHCPConfigScript.bat](/assets/files/DHCPConfigScript.txt)  
 2.	Copy each file to your DHCP Server to C:\DHCP\ 
 3.	Open Command Prompt as Administrator and navigate to the C:\DHCP folder 
 4. Run: Windows_DHCP.bat 
