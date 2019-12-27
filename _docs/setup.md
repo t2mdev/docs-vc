@@ -163,8 +163,6 @@ Open your web browser and navigate to the phone’s IP address.
 ## Windows DHCP Settings ##
 The following steps are needed to configure Pin Authentication for DHCP/Common Area Phones.  These steps must be completed for each location.
 
-If your site uses a Cisco Router for DHCP, download the Cisco DHCP Settings file and apply to your configuration.
-
 1.	Download the following two files from the portal.  Rename the DHCPConfigScript.txt to DHCPConfigScript.bat.
 * [Windows_DHCP.bat](/assets/files/Windows_DHCP.txt) 
 * [DHCPConfigScript.bat](/assets/files/DHCPConfigScript.txt)  
@@ -178,3 +176,8 @@ To confirm your settings:
 1. Open up DHCP and navigate to your IPv4 - Server Options.  You should now see the updated MSUCClient strings. 
 
 NOTE: If your CX Series phones were previously logged into another server via Pin Auth, you must do a reset of the phone to clear these settings.
+
+## Cicsco DHCP Settings ##
+
+If your site uses a Cisco Router for DHCP, download the [Cisco DHCP Settings file](/assets/files/CiscoDHCPConfig.txt) and apply to your configuration.
+
