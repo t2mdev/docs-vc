@@ -29,12 +29,12 @@ As a T2M Voice+ customer, it is important to understand that once a user has mov
 ### Step 1: Set AD Attributes for All Users
 
 In order to ensure a T2M Voice+ user can successfully move to Teams as well as ensure the conveyance of presence between Teams and SfB users, it is important to have the correct AD attributes set for the users who are using Teams with T2M Direct Routing. If the attributes described below are not correct, this could impact presence from working properly between Teams and SfB users. The following AD attributes must be set to the values shown in the customer on-premises AD and synced to Azure for any user homed on Skype for Business Server:
-| **AD Attribute**                 | **Value**                                            |
-|----------------------------------|------------------------------------------------------|
-| **msRTCSIP\-DeploymentLocator**  |SRV:                                                  |
-| **msRTCSIP\-OptionFlags**        |385                                                   |
-| **msRTCSIP\-UserEnabled**        |TRUE                                                  |
-| **msRTCSIP\-PrimaryUserAddress** |sip:user@domain\.com \(User's SIP Address with sip:\) |
+| **AD Attribute**                | **Value**                                        |
+|---------------------------------|--------------------------------------------------|
+| **msRTCSIP-DeploymentLocator**  |SRV:                                              |
+| **msRTCSIP-OptionFlags**        |385                                               |
+| **msRTCSIP-UserEnabled**        |TRUE                                              |
+| **msRTCSIP-PrimaryUserAddress** |sip:user@domain.com (User's SIP Address with sip: |
 
 **Notes:**
  1. If these attributes do not exist in your AD today, you will need to obtain a Skype for Business Server installation ISO from T2M to extend your AD schema and then refresh Azure AD Connect's AD Schema. 
