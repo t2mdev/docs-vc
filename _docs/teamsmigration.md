@@ -9,7 +9,7 @@ Many customers are beginning to take a closer look into T2M Teams Direct Routing
 When considering a move of the PSTN voice service to Teams, a small pilot deployment involving a select limited group of users is recommended to evaluate the experience prior to the greater company-wide deployment.  It is important to convey and understand the interop and functional differences between Skype for Business (SfB) and Teams to these pilot users because once they have begun to use Teams, they will still be interacting with the majority SfB user base who have not yet migrated to Teams.  This is where understanding the interop experience is important, so that certain aspects of interoperability that are expected are not mistaken for "problems" during the evaluation process.
  
 The primary interoperability or functionality characteristics to be aware of when using Teams are as follows:
- 1. Interop with Messaging, Audio/Video Calling, and presense will work between Voice+ & Teams Users at an organization. This allows for a staggered rollout
+ 1. Interop with Messaging, Audio/Video Calling, and presence will work between Voice+ & Teams Users at an organization. This allows for a staggered rollout
  2. Desktop sharing between Teams and SfB users is not supported
  3. A Teams user and a SfB user cannot do a file transfer between the differing clients
  4. A chat between Teams and SfB user cannot be escalated to a meeting from the chat
@@ -23,7 +23,7 @@ The primary interoperability or functionality characteristics to be aware of whe
  12. The user will be able to communicate with users in federated organizations
  13. Once in Teams Only mode, users cannot initiate calls or chats from Skype for Business, nor can they schedule new meetings in Skype for Business
  
-As a T2M Voice+ customer, it is important to understand that once a user has moved to Teams with T2M Direct Routing, the user management in the T2M Portal will be solely for number assigned and route assignment under the Teams App (https://my.t2mhosted.com/apps/teams/). Policies and other configurations for Teams must be managed within the Microsoft Teams Admin Center (https://admin.teams.microsoft.com/). Call details/related reporting, MACD activities, and any policy related configurations for Teams with T2M Direct Routing users are not available in the T2M portal at this time.
+As a T2M Voice+ customer, it is important to understand that once a user has moved to Teams with T2M Direct Routing, the user management in the T2M Portal will be solely for number assigned and route assignment under the Teams App (https://my.t2mhosted.com/apps/teams/). Policies and other configurations for Teams must be managed within the Microsoft Teams Admin Center (https://admin.teams.microsoft.com/). Call details/related reporting, MACD activities, and any policy related configurations for Teams with T2M Direct Routing users are not available in the T2M portal currently.
  
 ## Phase 1: User Migration Process
 ### Step 1: Set AD Attributes for All Users
@@ -34,7 +34,7 @@ In order to ensure a T2M Voice+ user can successfully move to Teams as well as e
 | **msRTCSIP-DeploymentLocator**  |SRV:                                              |
 | **msRTCSIP-OptionFlags**        |385                                               |
 | **msRTCSIP-UserEnabled**        |TRUE                                              |
-| **msRTCSIP-PrimaryUserAddress** |sip:user@domain.com (User's SIP Address with sip: |
+| **msRTCSIP-PrimaryUserAddress** |sip:user@domain.com (User's SIP Address with sip:)|
 
 **Notes:**
  1. If these attributes do not exist in your AD today, you will need to obtain a Skype for Business Server installation ISO from T2M to extend your AD schema and then refresh Azure AD Connect's AD Schema. 
@@ -65,7 +65,7 @@ Once these values are set, Skype for Business Online will report the following a
 
 ### Step 2: Plan to Migrate a Group of Users
 
-A group of users needs to be selected to be migrated to Teams. This can be a department, a random list of users, or the entire organization itself. Once these users have been selected, the numbers that are assigned to those users/services (Auto Attendants, Response Groups, etc.) need to be provided to T2M. Once T2M has this information, a date will be provided as to when the users will make the transition to Microsoft Teams/T2M Direct Routing. T2M will also confirm that the interpreted user type for the identified users in the customers tenant is set to **HybridOnPremisesSFBUser**
+A group of users need to be selected that will be migrated to Teams. This can be a department, a random list of users, or the entire organization itself. Once these users have been selected, the numbers that are assigned to those users/services (Auto Attendants, Response Groups, etc.) need to be provided to T2M. Once T2M has this information, a date will be provided as to when the users will make the transition to Microsoft Teams/T2M Direct Routing. T2M will also confirm that the interpreted user type for the identified users in the customers tenant is set to **HybridOnPremisesSFBUser**
 
 Note: If a customer is moving away from T2M and moving to Calling Plans from Microsoft, this date will reside on the port date of the phone numbers away from T2M
 
@@ -89,14 +89,14 @@ Note: the customer is responsible for making sure that their user objects have t
 
 On the day of the user migration, T2M will confirm with the customer beforehand that the move process is still a go. Once this has been verified, T2M will begin the migration of the user objects from Skype for Business Server to Microsoft Teams at the selected time. A report will be given to the customer stating that the users are no longer homed on-premises and are now homed in the cloud.
 
-The customer will need to modify the following AD attribute for each user in the batch in order to complete the user migration to Microsoft Teams:
+The customer will need to modify the following AD attribute for each user in the batch to complete the user migration to Microsoft Teams:
 | **AD Attribute**               | **Value**              |
 |--------------------------------|------------------------|
 | **msRTCSIP-DeploymentLocator** | sipfed.online.lync.com |
 
 Note: These attributes will need to stay in your AD for existing users, but new users will not need these set. T2M Can also provide a script to assist with setting these attributes.
 
-**Repeat Steps 2-4 for all remaining users before continuing to the next Phase**
+**Repeat Steps 2-4 for all remaining users before continuing to the next phase**
 
 
 ## Phase 2: Migration away from T2M's Voice+ Service
