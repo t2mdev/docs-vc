@@ -172,7 +172,7 @@ After this is installed, connect to Skype for Business Online via PowerShell wit
 
 Now that all user objects are fully online, the tenant Coexistence Mode must be set to **Teams Only**. To do this navigate to the Microsoft Teams Admin Center (https://admin.teams.microsoft.com/) and select **Org-Wide Settings > Teams Upgrade** then change the **Coexistence Mode** to **Teams Only**. Click **Save** and a warning will appear confirming that you want to make this change. Click **Save** on this prompt to confirm the change.
 
-![Cloud Portal](/assets/images/teamsmigration.1.png){:width="850px"}
+![Cloud Portal](/assets/images/teamsmigration.1.PNG){:width="850px"}
 
 
 ## Migration Complete
