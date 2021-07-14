@@ -237,6 +237,10 @@ footer {
   float: left;
 }
 
+#FooterT2MLogo {
+  height:fit-content;
+}
+
 /* Hide the collapsible nav bar */
 
 @media screen and (min-width: 801px) {
